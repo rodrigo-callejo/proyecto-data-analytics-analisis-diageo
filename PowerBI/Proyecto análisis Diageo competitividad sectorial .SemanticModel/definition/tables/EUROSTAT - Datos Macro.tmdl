@@ -30,7 +30,7 @@ table 'EUROSTAT - Datos Macro'
 		dataType: int64
 		formatString: #,##0
 		lineageTag: d011b321-cf4f-4b28-8532-b382b78961a6
-		summarizeBy: sum
+		summarizeBy: average
 		sourceColumn: Num Empresas
 
 		annotation SummarizationSetBy = User
@@ -39,7 +39,7 @@ table 'EUROSTAT - Datos Macro'
 		dataType: double
 		formatString: #,##0
 		lineageTag: 5196406d-4656-474e-9901-63784798aa47
-		summarizeBy: sum
+		summarizeBy: average
 		sourceColumn: Facturación €
 
 		annotation SummarizationSetBy = User
@@ -48,7 +48,7 @@ table 'EUROSTAT - Datos Macro'
 		dataType: double
 		formatString: #,##0
 		lineageTag: 2622457b-8198-4c3d-8cbd-6e20d776d342
-		summarizeBy: sum
+		summarizeBy: average
 		sourceColumn: Valor Producción €
 
 		annotation SummarizationSetBy = User
@@ -57,7 +57,7 @@ table 'EUROSTAT - Datos Macro'
 		dataType: double
 		formatString: #,##0
 		lineageTag: 3fedd7c1-5909-4080-bd03-a4f34618155c
-		summarizeBy: sum
+		summarizeBy: average
 		sourceColumn: Margen Bruto €
 
 		annotation SummarizationSetBy = User
@@ -66,7 +66,7 @@ table 'EUROSTAT - Datos Macro'
 		dataType: double
 		formatString: #,##0
 		lineageTag: c8ae99e2-26db-4165-9ebc-49aa048846fc
-		summarizeBy: sum
+		summarizeBy: average
 		sourceColumn: Valor Añadido €
 
 		annotation SummarizationSetBy = User

@@ -2,24 +2,22 @@ table 'SABI - Empresas competidores Españolas'
 	lineageTag: 84c2aeff-1773-4881-ac83-73d7555573e8
 
 	measure 'Métrica seleccionada SABI' =
-			
 			VAR _sel = SELECTEDVALUE('Selector métrica SABI'[Parámetro Orden])
 			RETURN
 			SWITCH(
 			    _sel,
-			    NAMEOF('SABI - Empresas competidores Españolas'[Ingresos]),         AVERAGE('SABI - Empresas competidores Españolas'[Ingresos]),
-			    NAMEOF('SABI - Empresas competidores Españolas'[Resultado Neto]),    AVERAGE('SABI - Empresas competidores Españolas'[Resultado Neto]),
-			    NAMEOF('SABI - Empresas competidores Españolas'[Resultados ant impuestos]), AVERAGE('SABI - Empresas competidores Españolas'[Resultados ant impuestos]),
-			    NAMEOF('SABI - Empresas competidores Españolas'[Fondos Propios]),    AVERAGE('SABI - Empresas competidores Españolas'[Fondos Propios]),
-			    NAMEOF('SABI - Empresas competidores Españolas'[Activo Total]),      AVERAGE('SABI - Empresas competidores Españolas'[Activo Total]),
-			    NAMEOF('SABI - Empresas competidores Españolas'[% ROI]),             AVERAGE('SABI - Empresas competidores Españolas'[% ROI]),
-			    NAMEOF('SABI - Empresas competidores Españolas'[% ROE]),             AVERAGE('SABI - Empresas competidores Españolas'[% ROE]),
-			    NAMEOF('SABI - Empresas competidores Españolas'[Liquidez]),          AVERAGE('SABI - Empresas competidores Españolas'[Liquidez]),
-			    NAMEOF('SABI - Empresas competidores Españolas'[% Endeudamiento]),   AVERAGE('SABI - Empresas competidores Españolas'[% Endeudamiento])
+			    0, AVERAGE('SABI - Empresas competidores Españolas'[Nº Empleados]),
+			    1, AVERAGE('SABI - Empresas competidores Españolas'[Liquidez]),
+			    2, AVERAGE('SABI - Empresas competidores Españolas'[Ingresos]),
+			    3, AVERAGE('SABI - Empresas competidores Españolas'[Resultado Neto]),
+			    4, AVERAGE('SABI - Empresas competidores Españolas'[Resultados ant impuestos]),
+			    5, AVERAGE('SABI - Empresas competidores Españolas'[Fondos Propios]),
+			    6, AVERAGE('SABI - Empresas competidores Españolas'[Activo Total]),
+			    7, AVERAGE('SABI - Empresas competidores Españolas'[% ROI]),
+			    8, AVERAGE('SABI - Empresas competidores Españolas'[% ROE]),
+			    9, AVERAGE('SABI - Empresas competidores Españolas'[% Endeudamiento])
 			)
 		lineageTag: 1748bb4a-6572-4d4a-82c9-802318d8effc
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Año
 		dataType: int64

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "c03ff4e1b414d2dc598c",
+  "position": {
+    "x": 2.60629200970449,
+    "y": 0,
+    "z": 1000,
+    "height": 107.05882352941177,
+    "width": 61.764705882352942
+  },
+  "visualGroup": {
+    "displayName": "Tendencias",
+    "groupMode": "ScaleMode",
+    "objects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "parentGroupName": "0e7baeaab746744e6b94"
+}

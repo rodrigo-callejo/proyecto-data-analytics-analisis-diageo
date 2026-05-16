@@ -1,0 +1,24 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#112558"
+  stroke-width="1"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <!-- Barras -->
+  <rect x="4.5"  y="14.5" width="2" height="5.5" />
+  <rect x="8.5"  y="11"   width="2" height="9" />
+  <rect x="12.5" y="14.5" width="2" height="5.5" />
+  <rect x="16.5" y="10"    width="2" height="10" />
+
+  <!-- Línea de tendencia -->
+  <polyline points="5,12 9.5,8 13.5,11 18,5.2" />
+
+  <!-- Flecha simétrica respecto al último tramo -->
+  <line x1="18" y1="5.2" x2="17.85" y2="7.36" />
+  <line x1="18" y1="5.2" x2="15.95" y2="5.89" />
+</svg>

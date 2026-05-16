@@ -1,0 +1,37 @@
+<svg width="200" height="200" viewBox="0 0 200 200" 
+     xmlns="http://www.w3.org/2000/svg" 
+     stroke="#94A3B8" 
+     stroke-width="8" 
+     stroke-linecap="round" 
+     stroke-linejoin="round">
+
+  <!-- PERSONA IZQUIERDA (atrás) -->
+  <circle cx="60" cy="68" r="16" fill="white"/>
+  <path d="M30 120
+           a30 30 0 0 1 60 0
+           v10
+           h-60
+           z"
+        fill="white"/>
+
+  <!-- PERSONA DERECHA (atrás) -->
+  <circle cx="140" cy="68" r="16" fill="white"/>
+  <path d="M110 120
+           a30 30 0 0 1 60 0
+           v10
+           h-60
+           z"
+        fill="white"/>
+
+  <!-- PERSONA CENTRAL (adelante) -->
+  <!-- Cabeza subida para recuperar proporción -->
+  <circle cx="100" cy="68" r="22" fill="white"/>
+  <!-- Cuerpo mantiene profundidad -->
+  <path d="M60 135
+           a40 40 0 0 1 80 0
+           v10
+           h-80
+           z"
+        fill="white"/>
+
+</svg>

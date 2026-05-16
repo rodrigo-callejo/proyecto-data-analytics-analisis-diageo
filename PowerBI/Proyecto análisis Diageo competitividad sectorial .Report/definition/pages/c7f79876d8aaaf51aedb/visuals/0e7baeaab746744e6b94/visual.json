@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "0e7baeaab746744e6b94",
+  "position": {
+    "x": 2.569303583502367,
+    "y": 87.909824892523844,
+    "z": 1000,
+    "height": 107.05882352941177,
+    "width": 64.370997892057431
+  },
+  "visualGroup": {
+    "displayName": "Tendencias",
+    "groupMode": "ScaleMode"
+  },
+  "parentGroupName": "7129b9031df7f5010ddd"
+}

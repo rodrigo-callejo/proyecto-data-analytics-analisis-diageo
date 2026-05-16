@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "74c6bd02c039e35758e0",
   "position": {
-    "x": 765.885885885886,
+    "x": 762.1426402557737,
     "y": 0,
-    "z": 6002,
-    "height": 68.228228228228232,
-    "width": 204.6846846846847,
+    "z": 5000,
+    "height": 68.313001232428959,
+    "width": 204.11595548966724,
     "tabOrder": 4000
   },
   "visual": {
@@ -69,7 +69,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'''SABI - Empresas competidores Españolas''[% ROI]'"
+                                "Value": "'''SABI - Empresas competidores Españolas''[Ingresos]'"
                               }
                             }
                           ]
@@ -97,7 +97,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "'''SABI - Empresas competidores Españolas''[% ROI]'"
+                                      "Value": "'''SABI - Empresas competidores Españolas''[Ingresos]'"
                                     }
                                   }
                                 ]
@@ -121,7 +121,7 @@
                         },
                         "valueMap": [
                           {
-                            "0": "% ROI"
+                            "0": "Ingresos"
                           }
                         ]
                       }
@@ -140,6 +140,13 @@
               "expr": {
                 "Literal": {
                   "Value": "8D"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -335,6 +342,19 @@
               "expr": {
                 "Literal": {
                   "Value": "'Default'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

@@ -4,7 +4,7 @@
   "position": {
     "x": 527.56756756756761,
     "y": 0,
-    "z": 2000,
+    "z": 1000,
     "height": 67.267267267267272,
     "width": 223.90390390390391,
     "tabOrder": 1000
@@ -81,7 +81,28 @@
                           [
                             {
                               "Literal": {
+                                "Value": "'BACARDI ESPAÑA SA'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'BEAM SUNTORY DISTRIBUTION SL'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
                                 "Value": "'DIAGEO ESPAÑA SA'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'PERNOD RICARD ESPAÑA SA'"
                               }
                             }
                           ]

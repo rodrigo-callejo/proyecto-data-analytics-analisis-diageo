@@ -2,15 +2,15 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "6855e68bbf3850ab4de3",
   "position": {
-    "x": 78.7987987987988,
-    "y": 86.4864864864865,
-    "z": 5000,
-    "height": 388.22822822822826,
-    "width": 646.72672672672684,
+    "x": 79.01262793148409,
+    "y": 83.950917177201845,
+    "z": 3000,
+    "height": 388.47875399646347,
+    "width": 744.03557968814187,
     "tabOrder": 3000
   },
   "visual": {
-    "visualType": "stackedAreaChart",
+    "visualType": "lineChart",
     "query": {
       "queryState": {
         "Category": {
@@ -32,11 +32,23 @@
             }
           ]
         },
-        "Rows": {
-          "projections": []
-        },
         "Series": {
-          "projections": []
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Empresa"
+                    }
+                  },
+                  "Property": "Empresa"
+                }
+              },
+              "queryRef": "Empresa.Empresa",
+              "nativeQueryRef": "Recuento de Empresa"
+            }
+          ]
         },
         "Y": {
           "projections": [
@@ -76,6 +88,34 @@
         "isDefaultSort": true
       }
     },
+    "objects": {
+      "y2Axis": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
     "visualContainerObjects": {
       "title": [
         {
@@ -83,7 +123,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Evolutivo'"
+                  "Value": "'Year over Year'"
                 }
               }
             }

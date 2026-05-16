@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "3b597a759de302835f40",
   "position": {
-    "x": 78.7987987987988,
-    "y": 485.28528528528534,
-    "z": 3000,
-    "height": 227.74774774774778,
-    "width": 1156.0360360360362,
+    "x": 79.01262793148409,
+    "y": 485.59844249557932,
+    "z": 2000,
+    "height": 227.16130530301677,
+    "width": 1189.3046600103596,
     "tabOrder": 2000
   },
   "visual": {
@@ -225,6 +225,23 @@
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "SABI - Empresas competidores Españolas"
+                  }
+                },
+                "Property": "Año"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
       }
     },
     "objects": {

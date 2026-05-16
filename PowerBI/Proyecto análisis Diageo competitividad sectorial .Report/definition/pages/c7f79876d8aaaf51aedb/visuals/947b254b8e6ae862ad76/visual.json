@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "947b254b8e6ae862ad76",
+  "position": {
+    "x": 2.8630129822948689,
+    "y": 0,
+    "z": 1000,
+    "height": 95.2843947496354,
+    "width": 61.07761028895721
+  },
+  "visualGroup": {
+    "displayName": "Clientes",
+    "groupMode": "ScaleMode",
+    "objects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "parentGroupName": "fd186860f81d8fc25ced"
+}

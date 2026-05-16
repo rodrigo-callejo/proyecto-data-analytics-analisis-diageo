@@ -11,7 +11,7 @@
       "type": "SharedResources"
     },
     "customTheme": {
-      "name": "Corver_-_Navy_Professional18113688364847746.json",
+      "name": "Corver_-_Navy_Professional6644645951870489.json",
       "reportVersionAtImport": {
         "visual": "2.8.0",
         "report": "3.2.0",
@@ -65,8 +65,18 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "Corver_-_Navy_Professional18113688364847746.json",
-          "path": "Corver_-_Navy_Professional18113688364847746.json",
+          "name": "chart_blue25588599364477427.svg",
+          "path": "chart_blue25588599364477427.svg",
+          "type": "Image"
+        },
+        {
+          "name": "chart_gray13213513511536668.svg",
+          "path": "chart_gray13213513511536668.svg",
+          "type": "Image"
+        },
+        {
+          "name": "Corver_-_Navy_Professional6644645951870489.json",
+          "path": "Corver_-_Navy_Professional6644645951870489.json",
           "type": "CustomTheme"
         },
         {
@@ -77,6 +87,16 @@
         {
           "name": "logo_diageo6467761273371744.png",
           "path": "logo_diageo6467761273371744.png",
+          "type": "Image"
+        },
+        {
+          "name": "users_blue4075135999393914.svg",
+          "path": "users_blue4075135999393914.svg",
+          "type": "Image"
+        },
+        {
+          "name": "users_gray2392236130794938.svg",
+          "path": "users_gray2392236130794938.svg",
           "type": "Image"
         }
       ]

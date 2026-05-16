@@ -1,0 +1,281 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "255dfcc9b5445451e76e",
+  "position": {
+    "x": 79.01262793148409,
+    "y": 485.59844249557932,
+    "z": 2000,
+    "height": 227.16130530301677,
+    "width": 1189.3046600103596,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SABI - Empresas competidores Españolas"
+                    }
+                  },
+                  "Property": "Año"
+                }
+              },
+              "queryRef": "SABI - Empresas competidores Españolas.Año",
+              "nativeQueryRef": "Año"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Empresa"
+                    }
+                  },
+                  "Property": "Empresa"
+                }
+              },
+              "queryRef": "Empresa.Empresa",
+              "nativeQueryRef": "Empresa"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "SABI - Empresas competidores Españolas"
+                        }
+                      },
+                      "Property": "Nº Empleados"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(SABI - Empresas competidores Españolas.Empleados)",
+              "nativeQueryRef": "Nº Empleados",
+              "displayName": "Nº Empleados"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "SABI - Empresas competidores Españolas"
+                        }
+                      },
+                      "Property": "Fondos Propios"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(SABI - Empresas competidores Españolas.Fondos Propios)",
+              "nativeQueryRef": "Fondos propios",
+              "displayName": "Fondos propios"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "SABI - Empresas competidores Españolas"
+                        }
+                      },
+                      "Property": "Ingresos"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(SABI - Empresas competidores Españolas.Ingresos)",
+              "nativeQueryRef": "Ingresos",
+              "displayName": "Ingresos"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "SABI - Empresas competidores Españolas"
+                        }
+                      },
+                      "Property": "Resultados ant impuestos"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(SABI - Empresas competidores Españolas.Resultados ant impuestos)",
+              "nativeQueryRef": "Resultados antes de impuestos",
+              "displayName": "Resultados antes de impuestos"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "SABI - Empresas competidores Españolas"
+                        }
+                      },
+                      "Property": "Resultado Neto"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(SABI - Empresas competidores Españolas.Resultado Neto)",
+              "nativeQueryRef": "Resultado neto",
+              "displayName": "Resultado neto"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "SABI - Empresas competidores Españolas"
+                        }
+                      },
+                      "Property": "% Endeudamiento"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Avg(SABI - Empresas competidores Españolas.% Endeudamiento)",
+              "nativeQueryRef": "% Endeudamiento",
+              "displayName": "% Endeudamiento"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "SABI - Empresas competidores Españolas"
+                        }
+                      },
+                      "Property": "% ROI"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Avg(SABI - Empresas competidores Españolas.% ROI)",
+              "nativeQueryRef": "% ROI",
+              "displayName": "% ROI"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "SABI - Empresas competidores Españolas"
+                        }
+                      },
+                      "Property": "% ROE"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Avg(SABI - Empresas competidores Españolas.% ROE)",
+              "nativeQueryRef": "% ROE",
+              "displayName": "% ROE"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "SABI - Empresas competidores Españolas"
+                        }
+                      },
+                      "Property": "Activo Total"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(SABI - Empresas competidores Españolas.Activo Total)",
+              "nativeQueryRef": "Activo Total",
+              "displayName": "Activo Total"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "SABI - Empresas competidores Españolas"
+                  }
+                },
+                "Property": "Año"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "values": [
+        {
+          "properties": {},
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "Sum(SABI - Empresas competidores Españolas.Empleados)"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Detalle empresa'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

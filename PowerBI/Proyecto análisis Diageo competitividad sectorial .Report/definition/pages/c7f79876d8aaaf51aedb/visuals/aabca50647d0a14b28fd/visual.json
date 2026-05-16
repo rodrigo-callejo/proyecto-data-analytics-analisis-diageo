@@ -1,0 +1,136 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "aabca50647d0a14b28fd",
+  "position": {
+    "x": 79.01262793148409,
+    "y": 83.950917177201845,
+    "z": 3000,
+    "height": 388.47875399646347,
+    "width": 744.03557968814187,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SABI - Empresas competidores Españolas"
+                    }
+                  },
+                  "Property": "Año"
+                }
+              },
+              "queryRef": "SABI - Empresas competidores Españolas.Año",
+              "nativeQueryRef": "Año",
+              "active": true
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Empresa"
+                    }
+                  },
+                  "Property": "Empresa"
+                }
+              },
+              "queryRef": "Empresa.Empresa",
+              "nativeQueryRef": "Recuento de Empresa"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SABI - Empresas competidores Españolas"
+                    }
+                  },
+                  "Property": "Métrica seleccionada SABI"
+                }
+              },
+              "queryRef": "SABI - Empresas competidores Españolas.Métrica seleccionada SABI",
+              "nativeQueryRef": "Métrica seleccionada SABI"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "SABI - Empresas competidores Españolas"
+                  }
+                },
+                "Property": "Métrica seleccionada SABI"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "y2Axis": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Year over Year'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
