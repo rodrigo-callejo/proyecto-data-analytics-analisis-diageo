@@ -1,0 +1,69 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "2b341fef111d77db88c0",
+  "position": {
+    "x": 741.86186186186194,
+    "y": 86.4864864864865,
+    "z": 6003,
+    "height": 387.2672672672673,
+    "width": 492.972972972973,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Años"
+                    }
+                  },
+                  "Property": "Año"
+                }
+              },
+              "queryRef": "Años.Año",
+              "nativeQueryRef": "Año"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SABI - Empresas competidores Españolas"
+                    }
+                  },
+                  "Property": "% ROI"
+                }
+              },
+              "queryRef": "SABI - Empresas competidores Españolas.% ROI",
+              "nativeQueryRef": "% ROI",
+              "displayName": "% ROI"
+            }
+          ],
+          "fieldParameters": [
+            {
+              "parameterExpr": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Selector métrica SABI"
+                    }
+                  },
+                  "Property": "Métrica"
+                }
+              },
+              "index": 1,
+              "length": 1
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "1c2c82b70fdf93b66d5f",
+  "position": {
+    "x": 206.60660660660662,
+    "y": 0,
+    "z": 6001,
+    "height": 67.267267267267272,
+    "width": 301.74174174174175,
+    "tabOrder": 6000
+  },
+  "visualGroup": {
+    "displayName": "Filtro Año",
+    "groupMode": "ScaleMode",
+    "objects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

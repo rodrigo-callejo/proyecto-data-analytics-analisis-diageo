@@ -1,6 +1,26 @@
 table 'SABI - Empresas competidores Españolas'
 	lineageTag: 84c2aeff-1773-4881-ac83-73d7555573e8
 
+	measure 'Métrica seleccionada SABI' =
+			
+			VAR _sel = SELECTEDVALUE('Selector métrica SABI'[Parámetro Orden])
+			RETURN
+			SWITCH(
+			    _sel,
+			    NAMEOF('SABI - Empresas competidores Españolas'[Ingresos]),         AVERAGE('SABI - Empresas competidores Españolas'[Ingresos]),
+			    NAMEOF('SABI - Empresas competidores Españolas'[Resultado Neto]),    AVERAGE('SABI - Empresas competidores Españolas'[Resultado Neto]),
+			    NAMEOF('SABI - Empresas competidores Españolas'[Resultados ant impuestos]), AVERAGE('SABI - Empresas competidores Españolas'[Resultados ant impuestos]),
+			    NAMEOF('SABI - Empresas competidores Españolas'[Fondos Propios]),    AVERAGE('SABI - Empresas competidores Españolas'[Fondos Propios]),
+			    NAMEOF('SABI - Empresas competidores Españolas'[Activo Total]),      AVERAGE('SABI - Empresas competidores Españolas'[Activo Total]),
+			    NAMEOF('SABI - Empresas competidores Españolas'[% ROI]),             AVERAGE('SABI - Empresas competidores Españolas'[% ROI]),
+			    NAMEOF('SABI - Empresas competidores Españolas'[% ROE]),             AVERAGE('SABI - Empresas competidores Españolas'[% ROE]),
+			    NAMEOF('SABI - Empresas competidores Españolas'[Liquidez]),          AVERAGE('SABI - Empresas competidores Españolas'[Liquidez]),
+			    NAMEOF('SABI - Empresas competidores Españolas'[% Endeudamiento]),   AVERAGE('SABI - Empresas competidores Españolas'[% Endeudamiento])
+			)
+		lineageTag: 1748bb4a-6572-4d4a-82c9-802318d8effc
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Año
 		dataType: int64
 		formatString: 0
@@ -103,21 +123,21 @@ table 'SABI - Empresas competidores Españolas'
 
 		annotation SummarizationSetBy = User
 
-	column 'ROI pct'
+	column '% ROI'
 		dataType: double
-		formatString: 0.00
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
 		lineageTag: 81f282cf-70ea-4114-956b-fda8735f6275
 		summarizeBy: average
-		sourceColumn: ROI pct
+		sourceColumn: % ROI
 
 		annotation SummarizationSetBy = User
 
-	column 'ROE pct'
+	column '% ROE'
 		dataType: double
-		formatString: 0.00
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
 		lineageTag: 2f39d445-0ff8-4ad4-bef0-d304a4de0f1a
 		summarizeBy: average
-		sourceColumn: ROE pct
+		sourceColumn: % ROE
 
 		annotation SummarizationSetBy = User
 
@@ -130,21 +150,21 @@ table 'SABI - Empresas competidores Españolas'
 
 		annotation SummarizationSetBy = User
 
-	column 'Endeudamiento Porcentual'
+	column '% Endeudamiento'
 		dataType: double
-		formatString: 0.00
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
 		lineageTag: 0584a6f7-dc65-438e-8302-be8e23d27056
 		summarizeBy: average
-		sourceColumn: Endeudamiento Porcentual
+		sourceColumn: % Endeudamiento
 
 		annotation SummarizationSetBy = User
 
-	column Empleados
+	column 'Nº Empleados'
 		dataType: int64
 		formatString: #,##0
 		lineageTag: 99a25e7c-1e5c-47d8-b8b0-6f5c2d5abc9c
 		summarizeBy: sum
-		sourceColumn: Empleados
+		sourceColumn: Nº Empleados
 
 		annotation SummarizationSetBy = User
 
@@ -173,9 +193,10 @@ table 'SABI - Empresas competidores Españolas'
 				        {"Liquidez", type number},
 				        {"Endeudamiento Porcentual", type number},
 				        {"Empleados", Int64.Type}
-				    })
+				    }),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Tipo cambiado",{{"ROI pct", "% ROI"}, {"ROE pct", "% ROE"}, {"Empleados", "Nº Empleados"}, {"Endeudamiento Porcentual", "% Endeudamiento"}})
 				in
-				    #"Tipo cambiado"
+				    #"Columnas con nombre cambiado"
 
 	annotation PBI_ResultType = Table
 

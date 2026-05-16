@@ -9,6 +9,15 @@
         "page": "2.3.1"
       },
       "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Corver_-_Navy_Professional18113688364847746.json",
+      "reportVersionAtImport": {
+        "visual": "2.8.0",
+        "report": "3.2.0",
+        "page": "2.3.1"
+      },
+      "type": "RegisteredResources"
     }
   },
   "objects": {
@@ -55,6 +64,11 @@
       "name": "RegisteredResources",
       "type": "RegisteredResources",
       "items": [
+        {
+          "name": "Corver_-_Navy_Professional18113688364847746.json",
+          "path": "Corver_-_Navy_Professional18113688364847746.json",
+          "type": "CustomTheme"
+        },
         {
           "name": "fondo_de_pantalla6569853395765765.png",
           "path": "fondo_de_pantalla6569853395765765.png",

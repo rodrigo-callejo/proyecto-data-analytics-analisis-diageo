@@ -1,0 +1,96 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "6855e68bbf3850ab4de3",
+  "position": {
+    "x": 78.7987987987988,
+    "y": 86.4864864864865,
+    "z": 5000,
+    "height": 388.22822822822826,
+    "width": 646.72672672672684,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "stackedAreaChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SABI - Empresas competidores Españolas"
+                    }
+                  },
+                  "Property": "Año"
+                }
+              },
+              "queryRef": "SABI - Empresas competidores Españolas.Año",
+              "nativeQueryRef": "Año",
+              "active": true
+            }
+          ]
+        },
+        "Rows": {
+          "projections": []
+        },
+        "Series": {
+          "projections": []
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SABI - Empresas competidores Españolas"
+                    }
+                  },
+                  "Property": "Métrica seleccionada SABI"
+                }
+              },
+              "queryRef": "SABI - Empresas competidores Españolas.Métrica seleccionada SABI",
+              "nativeQueryRef": "Métrica seleccionada SABI"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "SABI - Empresas competidores Españolas"
+                  }
+                },
+                "Property": "Métrica seleccionada SABI"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Evolutivo'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

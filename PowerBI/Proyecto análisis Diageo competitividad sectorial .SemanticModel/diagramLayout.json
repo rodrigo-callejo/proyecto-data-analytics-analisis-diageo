@@ -11,7 +11,7 @@
         {
           "location": {
             "x": 801,
-            "y": 463
+            "y": 470
           },
           "nodeIndex": "Años",
           "nodeLineageTag": "c657f77b-b1a9-49c9-9fbf-3af15b4b91bb",
@@ -23,21 +23,8 @@
         },
         {
           "location": {
-            "x": 186,
-            "y": 21
-          },
-          "nodeIndex": "Empresas",
-          "nodeLineageTag": "e4d41aa4-9f46-4e41-b6aa-84c98f5aee5c",
-          "size": {
-            "height": 200,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
             "x": 369,
-            "y": 347
+            "y": 354
           },
           "nodeIndex": "SABI - Empresas competidores Españolas",
           "nodeLineageTag": "84c2aeff-1773-4881-ac83-73d7555573e8",
@@ -50,12 +37,36 @@
         {
           "location": {
             "x": 852,
-            "y": 14
+            "y": 21
           },
           "nodeIndex": "EUROSTAT - Datos Macro",
           "nodeLineageTag": "3fdaa40d-69d7-4869-8c0a-9d3760a59af4",
           "size": {
             "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 186,
+            "y": 28
+          },
+          "nodeIndex": "Empresa",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 950,
+            "y": 247.5
+          },
+          "nodeIndex": "Selector métrica SABI",
+          "size": {
+            "height": 152,
             "width": 234
           },
           "zIndex": 0

@@ -1,0 +1,175 @@
+﻿{
+    "name": "Corver - Navy Professional",
+    "dataColors": [
+        "#112558",
+        "#334155",
+        "#475569",
+        "#64748B",
+        "#94A3B8",
+        "#CBD5E1",
+        "#1E3A8A",
+        "#0EA5E9",
+        "#3599B8",
+        "#DFBFBF",
+        "#4AC5BB",
+        "#5F6B6D",
+        "#FB8281",
+        "#F4D25A",
+        "#7F898A",
+        "#A4DDEE",
+        "#FDAB89",
+        "#B687AC",
+        "#28738A",
+        "#A78F8F",
+        "#168980",
+        "#293537",
+        "#BB4A4A",
+        "#B59525",
+        "#475052",
+        "#6A9FB0",
+        "#BD7150",
+        "#7B4F71",
+        "#1B4D5C",
+        "#706060",
+        "#0F5C55",
+        "#1C2325"
+    ],
+    "background": "#F0F2F5",
+    "foreground": "#111827",
+    "tableAccent": "#112558",
+    "visualStyles": {
+        "*": {
+            "*": {
+                "title": [
+                    {
+                        "show": true,
+                        "fontFamily": "Segoe UI Semibold",
+                        "fontSize": 14,
+                        "color": {
+                            "solid": {
+                                "color": "#111827"
+                            }
+                        }
+                    }
+                ],
+                "background": [
+                    {
+                        "show": true,
+                        "color": {
+                            "solid": {
+                                "color": "#FFFFFF"
+                            }
+                        },
+                        "transparency": 0
+                    }
+                ],
+                "border": [
+                    {
+                        "show": true,
+                        "color": {
+                            "solid": {
+                                "color": "#E5E7EB"
+                            }
+                        },
+                        "radius": 12
+                    }
+                ],
+                "dropShadow": [
+                    {
+                        "show": true,
+                        "color": {
+                            "solid": {
+                                "color": "#000000"
+                            }
+                        },
+                        "transparency": 95,
+                        "blur": 15,
+                        "angle": 135,
+                        "distance": 4,
+                        "shadowPosition": "Outer"
+                    }
+                ],
+                "visualTooltip": [
+                    {
+                        "type": "Default"
+                    }
+                ]
+            }
+        },
+        "tableEx": {
+            "*": {
+                "columnHeaders": [
+                    {
+                        "backColor": {
+                            "solid": {
+                                "color": "#112558"
+                            }
+                        },
+                        "fontColor": {
+                            "solid": {
+                                "color": "#FFFFFF"
+                            }
+                        }
+                    }
+                ],
+                "total": [
+                    {
+                        "backColor": {
+                            "solid": {
+                                "color": "#112558"
+                            }
+                        },
+                        "fontColor": {
+                            "solid": {
+                                "color": "#FFFFFF"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "pivotTable": {
+            "*": {
+                "columnHeaders": [
+                    {
+                        "backColor": {
+                            "solid": {
+                                "color": "#112558"
+                            }
+                        },
+                        "fontColor": {
+                            "solid": {
+                                "color": "#FFFFFF"
+                            }
+                        }
+                    }
+                ],
+                "subtotals": [
+                    {
+                        "backColor": {
+                            "solid": {
+                                "color": "#112558"
+                            }
+                        },
+                        "fontColor": {
+                            "solid": {
+                                "color": "#FFFFFF"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "actionButton": {
+            "*": {
+                "visualContainerObjects": {
+                    "dropShadow": [
+                        {
+                            "show": false
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

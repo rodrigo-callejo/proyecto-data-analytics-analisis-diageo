@@ -1,2 +1,2148 @@
 cultureInfo es-ES
 
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Años"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated",
+			            "Weight": 0.87
+			          }
+			        }
+			      ]
+			    },
+			    "año.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Años",
+			          "ConceptualProperty": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "empresa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Empresa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "empresa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "empresa.id_empresa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Empresa",
+			          "ConceptualProperty": "id_empresa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id empresa": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_empresa": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification empresa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity empresa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier empresa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential empresa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "empresa.empresa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Empresa",
+			          "ConceptualProperty": "Empresa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "empresa": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "empresa name": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "empresa.nif": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Empresa",
+			          "ConceptualProperty": "nif"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nif": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "empresa.ciudad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Empresa",
+			          "ConceptualProperty": "ciudad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ciudad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "empresa.tipo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Empresa",
+			          "ConceptualProperty": "tipo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SABI - Empresas competidores Españolas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "SABI - empresas competidores española": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SABI - empresa competidore española": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "SABI empresas competidores española": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "SABI empresa competidore española": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SABI - Empresas competidores Españolas",
+			          "ConceptualProperty": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española.ID_empresa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SABI - Empresas competidores Españolas",
+			          "ConceptualProperty": "ID Empresa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "ID empresa": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification empresa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity empresa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier empresa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential empresa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española.nombre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SABI - Empresas competidores Españolas",
+			          "ConceptualProperty": "Nombre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española.ciudad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SABI - Empresas competidores Españolas",
+			          "ConceptualProperty": "Ciudad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ciudad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española.tipo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SABI - Empresas competidores Españolas",
+			          "ConceptualProperty": "Tipo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española.cierre_fiscal": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SABI - Empresas competidores Españolas",
+			          "ConceptualProperty": "Cierre Fiscal"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cierre fiscal": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española.fecha_cierre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SABI - Empresas competidores Españolas",
+			          "ConceptualProperty": "Fecha Cierre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha cierre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española.ingreso": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SABI - Empresas competidores Españolas",
+			          "ConceptualProperty": "Ingresos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ingreso": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española.resultados_ant_impuesto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SABI - Empresas competidores Españolas",
+			          "ConceptualProperty": "Resultados ant impuestos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "resultados ant impuesto": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "resultado ant impuesto": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española.resultado_neto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SABI - Empresas competidores Españolas",
+			          "ConceptualProperty": "Resultado Neto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "resultado neto": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española.activo_total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SABI - Empresas competidores Españolas",
+			          "ConceptualProperty": "Activo Total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "activo total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "activo aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "activo overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española.fondos_propio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SABI - Empresas competidores Españolas",
+			          "ConceptualProperty": "Fondos Propios"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fondos propio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fondo propio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española.roi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SABI - Empresas competidores Españolas",
+			          "ConceptualProperty": "% ROI"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% roi": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage roi": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "pct roi": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española.roe": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SABI - Empresas competidores Españolas",
+			          "ConceptualProperty": "% ROE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% roe": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage roe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "pct roe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "% caviar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "% spawn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "% frogspawn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "% seed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española.liquidez": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SABI - Empresas competidores Españolas",
+			          "ConceptualProperty": "Liquidez"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "liquidez": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española.endeudamiento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SABI - Empresas competidores Españolas",
+			          "ConceptualProperty": "% Endeudamiento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% endeudamiento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage endeudamiento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "pct endeudamiento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española.nº_empleado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SABI - Empresas competidores Españolas",
+			          "ConceptualProperty": "Nº Empleados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nº empleado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "EUROSTAT__datos_macro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EUROSTAT - Datos Macro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "EUROSTAT - datos macro": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "EUROSTAT - dato macro": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "EUROSTAT datos macro": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "EUROSTAT dato macro": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        },
+			        {
+			          "eurostat - dato instruction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "eurostat - dato shortcut": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "eurostat dato instruction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "eurostat dato shortcut": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "eurostat - dato command": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "eurostat - dato function": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "eurostat - dato short-cut": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "eurostat dato command": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "eurostat dato function": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "eurostat dato short-cut": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "EUROSTAT__datos_macro.región_mercado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EUROSTAT - Datos Macro",
+			          "ConceptualProperty": "Región Mercado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "región mercado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "EUROSTAT__datos_macro.país": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EUROSTAT - Datos Macro",
+			          "ConceptualProperty": "País"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "país": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "EUROSTAT__datos_macro.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EUROSTAT - Datos Macro",
+			          "ConceptualProperty": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "EUROSTAT__datos_macro.num_empresa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EUROSTAT - Datos Macro",
+			          "ConceptualProperty": "Num Empresas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "num empresa": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "number empresa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "EUROSTAT__datos_macro.facturación_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EUROSTAT - Datos Macro",
+			          "ConceptualProperty": "Facturación €"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "facturación €": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "EUROSTAT__datos_macro.valor_producción_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EUROSTAT - Datos Macro",
+			          "ConceptualProperty": "Valor Producción €"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor producción €": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "EUROSTAT__datos_macro.margen_bruto_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EUROSTAT - Datos Macro",
+			          "ConceptualProperty": "Margen Bruto €"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "margen bruto €": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "EUROSTAT__datos_macro.valor_añadido_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EUROSTAT - Datos Macro",
+			          "ConceptualProperty": "Valor Añadido €"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor añadido €": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "selector_métrica_SABI": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Selector métrica SABI"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "selector métrica SABI": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "selector_métrica_SABI.parámetro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Selector métrica SABI",
+			          "ConceptualProperty": "Métrica"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "parámetro": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Métrica": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "selector_métrica_SABI.parámetro_campos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Selector métrica SABI",
+			          "ConceptualProperty": "Parámetro Campos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "parámetro campos": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "selector_métrica_SABI.parámetro_orden": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Selector métrica SABI",
+			          "ConceptualProperty": "Parámetro Orden"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "parámetro orden": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "SABI__empresas_competidores_española_has_empresa": {
+			      "Binding": {
+			        "ConceptualEntity": "SABI - Empresas competidores Españolas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SABI__empresas_competidores_española": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española"
+			          }
+			        },
+			        "empresa": {
+			          "Target": {
+			            "Entity": "empresa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SABI__empresas_competidores_española"
+			            },
+			            "Object": {
+			              "Role": "empresa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SABI__empresas_competidores_española_have_empresas"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "empresa"
+			            },
+			            "Object": {
+			              "Role": "SABI__empresas_competidores_española"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "empresas_have_SABI__empresas_competidores_española"
+			        }
+			      ]
+			    },
+			    "selector_métrica_SABI_has_parámetro": {
+			      "Binding": {
+			        "ConceptualEntity": "Selector métrica SABI"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "selector_métrica_SABI": {
+			          "Target": {
+			            "Entity": "selector_métrica_SABI"
+			          }
+			        },
+			        "selector_métrica_SABI.parámetro": {
+			          "Target": {
+			            "Entity": "selector_métrica_SABI.parámetro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "selector_métrica_SABI"
+			            },
+			            "Object": {
+			              "Role": "selector_métrica_SABI.parámetro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "selector_métrica_SABIs_have_parámetros"
+			        }
+			      ]
+			    },
+			    "EUROSTAT__datos_macro_has_valor_añadido_": {
+			      "Binding": {
+			        "ConceptualEntity": "EUROSTAT - Datos Macro"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "EUROSTAT__datos_macro": {
+			          "Target": {
+			            "Entity": "EUROSTAT__datos_macro"
+			          }
+			        },
+			        "EUROSTAT__datos_macro.valor_añadido_": {
+			          "Target": {
+			            "Entity": "EUROSTAT__datos_macro.valor_añadido_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "EUROSTAT__datos_macro"
+			            },
+			            "Object": {
+			              "Role": "EUROSTAT__datos_macro.valor_añadido_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "EUROSTAT__datos_macros_have_valor_añadido_"
+			        }
+			      ]
+			    },
+			    "EUROSTAT__datos_macro_has_margen_bruto_": {
+			      "Binding": {
+			        "ConceptualEntity": "EUROSTAT - Datos Macro"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "EUROSTAT__datos_macro": {
+			          "Target": {
+			            "Entity": "EUROSTAT__datos_macro"
+			          }
+			        },
+			        "EUROSTAT__datos_macro.margen_bruto_": {
+			          "Target": {
+			            "Entity": "EUROSTAT__datos_macro.margen_bruto_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "EUROSTAT__datos_macro"
+			            },
+			            "Object": {
+			              "Role": "EUROSTAT__datos_macro.margen_bruto_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "EUROSTAT__datos_macros_have_margen_bruto_"
+			        }
+			      ]
+			    },
+			    "EUROSTAT__datos_macro_has_valor_producción_": {
+			      "Binding": {
+			        "ConceptualEntity": "EUROSTAT - Datos Macro"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "EUROSTAT__datos_macro": {
+			          "Target": {
+			            "Entity": "EUROSTAT__datos_macro"
+			          }
+			        },
+			        "EUROSTAT__datos_macro.valor_producción_": {
+			          "Target": {
+			            "Entity": "EUROSTAT__datos_macro.valor_producción_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "EUROSTAT__datos_macro"
+			            },
+			            "Object": {
+			              "Role": "EUROSTAT__datos_macro.valor_producción_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "EUROSTAT__datos_macros_have_valor_producción_"
+			        }
+			      ]
+			    },
+			    "EUROSTAT__datos_macro_has_facturación_": {
+			      "Binding": {
+			        "ConceptualEntity": "EUROSTAT - Datos Macro"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "EUROSTAT__datos_macro": {
+			          "Target": {
+			            "Entity": "EUROSTAT__datos_macro"
+			          }
+			        },
+			        "EUROSTAT__datos_macro.facturación_": {
+			          "Target": {
+			            "Entity": "EUROSTAT__datos_macro.facturación_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "EUROSTAT__datos_macro"
+			            },
+			            "Object": {
+			              "Role": "EUROSTAT__datos_macro.facturación_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "EUROSTAT__datos_macros_have_facturación_"
+			        }
+			      ]
+			    },
+			    "EUROSTAT__datos_macro_has_num_empresa": {
+			      "Binding": {
+			        "ConceptualEntity": "EUROSTAT - Datos Macro"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "EUROSTAT__datos_macro": {
+			          "Target": {
+			            "Entity": "EUROSTAT__datos_macro"
+			          }
+			        },
+			        "EUROSTAT__datos_macro.num_empresa": {
+			          "Target": {
+			            "Entity": "EUROSTAT__datos_macro.num_empresa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "EUROSTAT__datos_macro"
+			            },
+			            "Object": {
+			              "Role": "EUROSTAT__datos_macro.num_empresa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "EUROSTAT__datos_macros_have_num_empresas"
+			        }
+			      ]
+			    },
+			    "EUROSTAT__datos_macro_has_país": {
+			      "Binding": {
+			        "ConceptualEntity": "EUROSTAT - Datos Macro"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "EUROSTAT__datos_macro": {
+			          "Target": {
+			            "Entity": "EUROSTAT__datos_macro"
+			          }
+			        },
+			        "EUROSTAT__datos_macro.país": {
+			          "Target": {
+			            "Entity": "EUROSTAT__datos_macro.país"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "EUROSTAT__datos_macro"
+			            },
+			            "Object": {
+			              "Role": "EUROSTAT__datos_macro.país"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "EUROSTAT__datos_macros_have_país"
+			        }
+			      ]
+			    },
+			    "EUROSTAT__datos_macro_has_región_mercado": {
+			      "Binding": {
+			        "ConceptualEntity": "EUROSTAT - Datos Macro"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "EUROSTAT__datos_macro": {
+			          "Target": {
+			            "Entity": "EUROSTAT__datos_macro"
+			          }
+			        },
+			        "EUROSTAT__datos_macro.región_mercado": {
+			          "Target": {
+			            "Entity": "EUROSTAT__datos_macro.región_mercado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "EUROSTAT__datos_macro"
+			            },
+			            "Object": {
+			              "Role": "EUROSTAT__datos_macro.región_mercado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "EUROSTAT__datos_macros_have_región_mercado"
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española_has_nº_empleado": {
+			      "Binding": {
+			        "ConceptualEntity": "SABI - Empresas competidores Españolas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SABI__empresas_competidores_española": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española"
+			          }
+			        },
+			        "SABI__empresas_competidores_española.nº_empleado": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española.nº_empleado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SABI__empresas_competidores_española"
+			            },
+			            "Object": {
+			              "Role": "SABI__empresas_competidores_española.nº_empleado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SABI__empresas_competidores_española_have_nº_empleados"
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española_has_endeudamiento": {
+			      "Binding": {
+			        "ConceptualEntity": "SABI - Empresas competidores Españolas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SABI__empresas_competidores_española": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española"
+			          }
+			        },
+			        "SABI__empresas_competidores_española.endeudamiento": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española.endeudamiento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SABI__empresas_competidores_española"
+			            },
+			            "Object": {
+			              "Role": "SABI__empresas_competidores_española.endeudamiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SABI__empresas_competidores_española_have__endeudamientos"
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española_has_liquidez": {
+			      "Binding": {
+			        "ConceptualEntity": "SABI - Empresas competidores Españolas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SABI__empresas_competidores_española": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española"
+			          }
+			        },
+			        "SABI__empresas_competidores_española.liquidez": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española.liquidez"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SABI__empresas_competidores_española"
+			            },
+			            "Object": {
+			              "Role": "SABI__empresas_competidores_española.liquidez"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SABI__empresas_competidores_española_have_liquidezzes"
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española_has_roe": {
+			      "Binding": {
+			        "ConceptualEntity": "SABI - Empresas competidores Españolas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SABI__empresas_competidores_española": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española"
+			          }
+			        },
+			        "SABI__empresas_competidores_española.roe": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española.roe"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SABI__empresas_competidores_española"
+			            },
+			            "Object": {
+			              "Role": "SABI__empresas_competidores_española.roe"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SABI__empresas_competidores_española_have__roes"
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española_has_roi": {
+			      "Binding": {
+			        "ConceptualEntity": "SABI - Empresas competidores Españolas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SABI__empresas_competidores_española": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española"
+			          }
+			        },
+			        "SABI__empresas_competidores_española.roi": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española.roi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SABI__empresas_competidores_española"
+			            },
+			            "Object": {
+			              "Role": "SABI__empresas_competidores_española.roi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SABI__empresas_competidores_española_have__rois"
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española_has_fondos_propio": {
+			      "Binding": {
+			        "ConceptualEntity": "SABI - Empresas competidores Españolas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SABI__empresas_competidores_española": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española"
+			          }
+			        },
+			        "SABI__empresas_competidores_española.fondos_propio": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española.fondos_propio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SABI__empresas_competidores_española"
+			            },
+			            "Object": {
+			              "Role": "SABI__empresas_competidores_española.fondos_propio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SABI__empresas_competidores_española_have_fondos_propios"
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española_has_activo_total": {
+			      "Binding": {
+			        "ConceptualEntity": "SABI - Empresas competidores Españolas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SABI__empresas_competidores_española": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española"
+			          }
+			        },
+			        "SABI__empresas_competidores_española.activo_total": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española.activo_total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SABI__empresas_competidores_española"
+			            },
+			            "Object": {
+			              "Role": "SABI__empresas_competidores_española.activo_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SABI__empresas_competidores_española_have_activo_totals"
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española_has_resultado_neto": {
+			      "Binding": {
+			        "ConceptualEntity": "SABI - Empresas competidores Españolas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SABI__empresas_competidores_española": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española"
+			          }
+			        },
+			        "SABI__empresas_competidores_española.resultado_neto": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española.resultado_neto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SABI__empresas_competidores_española"
+			            },
+			            "Object": {
+			              "Role": "SABI__empresas_competidores_española.resultado_neto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SABI__empresas_competidores_española_have_resultado_netos"
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española_has_resultados_ant_impuesto": {
+			      "Binding": {
+			        "ConceptualEntity": "SABI - Empresas competidores Españolas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SABI__empresas_competidores_española": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española"
+			          }
+			        },
+			        "SABI__empresas_competidores_española.resultados_ant_impuesto": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española.resultados_ant_impuesto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SABI__empresas_competidores_española"
+			            },
+			            "Object": {
+			              "Role": "SABI__empresas_competidores_española.resultados_ant_impuesto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SABI__empresas_competidores_española_have_resultados_ant_impuestos"
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española_has_ingreso": {
+			      "Binding": {
+			        "ConceptualEntity": "SABI - Empresas competidores Españolas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SABI__empresas_competidores_española": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española"
+			          }
+			        },
+			        "SABI__empresas_competidores_española.ingreso": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española.ingreso"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SABI__empresas_competidores_española"
+			            },
+			            "Object": {
+			              "Role": "SABI__empresas_competidores_española.ingreso"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SABI__empresas_competidores_española_have_ingresos"
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española_has_fecha_cierre": {
+			      "Binding": {
+			        "ConceptualEntity": "SABI - Empresas competidores Españolas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SABI__empresas_competidores_española": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española"
+			          }
+			        },
+			        "SABI__empresas_competidores_española.fecha_cierre": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española.fecha_cierre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SABI__empresas_competidores_española"
+			            },
+			            "Object": {
+			              "Role": "SABI__empresas_competidores_española.fecha_cierre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SABI__empresas_competidores_española_have_fecha_cierres"
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española_has_cierre_fiscal": {
+			      "Binding": {
+			        "ConceptualEntity": "SABI - Empresas competidores Españolas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SABI__empresas_competidores_española": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española"
+			          }
+			        },
+			        "SABI__empresas_competidores_española.cierre_fiscal": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española.cierre_fiscal"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SABI__empresas_competidores_española"
+			            },
+			            "Object": {
+			              "Role": "SABI__empresas_competidores_española.cierre_fiscal"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SABI__empresas_competidores_española_have_cierre_fiscals"
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española_has_tipo": {
+			      "Binding": {
+			        "ConceptualEntity": "SABI - Empresas competidores Españolas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SABI__empresas_competidores_española": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española"
+			          }
+			        },
+			        "SABI__empresas_competidores_española.tipo": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española.tipo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SABI__empresas_competidores_española"
+			            },
+			            "Object": {
+			              "Role": "SABI__empresas_competidores_española.tipo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SABI__empresas_competidores_española_have_tipos"
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española_has_ciudad": {
+			      "Binding": {
+			        "ConceptualEntity": "SABI - Empresas competidores Españolas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SABI__empresas_competidores_española": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española"
+			          }
+			        },
+			        "SABI__empresas_competidores_española.ciudad": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española.ciudad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SABI__empresas_competidores_española"
+			            },
+			            "Object": {
+			              "Role": "SABI__empresas_competidores_española.ciudad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SABI__empresas_competidores_española_have_ciudad"
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española_has_nombre": {
+			      "Binding": {
+			        "ConceptualEntity": "SABI - Empresas competidores Españolas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SABI__empresas_competidores_española": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española"
+			          }
+			        },
+			        "SABI__empresas_competidores_española.nombre": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española.nombre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SABI__empresas_competidores_española"
+			            },
+			            "Object": {
+			              "Role": "SABI__empresas_competidores_española.nombre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SABI__empresas_competidores_española_have_nombres"
+			        }
+			      ]
+			    },
+			    "empresa_has_tipo": {
+			      "Binding": {
+			        "ConceptualEntity": "Empresa"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "empresa": {
+			          "Target": {
+			            "Entity": "empresa"
+			          }
+			        },
+			        "empresa.tipo": {
+			          "Target": {
+			            "Entity": "empresa.tipo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "empresa"
+			            },
+			            "Object": {
+			              "Role": "empresa.tipo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "empresas_have_tipos"
+			        }
+			      ]
+			    },
+			    "empresa_has_ciudad": {
+			      "Binding": {
+			        "ConceptualEntity": "Empresa"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "empresa": {
+			          "Target": {
+			            "Entity": "empresa"
+			          }
+			        },
+			        "empresa.ciudad": {
+			          "Target": {
+			            "Entity": "empresa.ciudad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "empresa"
+			            },
+			            "Object": {
+			              "Role": "empresa.ciudad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "empresas_have_ciudad"
+			        }
+			      ]
+			    },
+			    "empresa_has_nif": {
+			      "Binding": {
+			        "ConceptualEntity": "Empresa"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "empresa": {
+			          "Target": {
+			            "Entity": "empresa"
+			          }
+			        },
+			        "empresa.nif": {
+			          "Target": {
+			            "Entity": "empresa.nif"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "empresa"
+			            },
+			            "Object": {
+			              "Role": "empresa.nif"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "empresas_have_nifs"
+			        }
+			      ]
+			    },
+			    "empresa_has_empresa": {
+			      "Binding": {
+			        "ConceptualEntity": "Empresa"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "empresa": {
+			          "Target": {
+			            "Entity": "empresa"
+			          }
+			        },
+			        "empresa.empresa": {
+			          "Target": {
+			            "Entity": "empresa.empresa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "empresa"
+			            },
+			            "Object": {
+			              "Role": "empresa.empresa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "empresas_have_empresas"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "empresa"
+			            },
+			            "Name": {
+			              "Role": "empresa.empresa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "empresas_are_names_IDs_of_empresas"
+			        }
+			      ]
+			    },
+			    "empresa_has_id_empresa": {
+			      "Binding": {
+			        "ConceptualEntity": "Empresa"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "empresa": {
+			          "Target": {
+			            "Entity": "empresa"
+			          }
+			        },
+			        "empresa.id_empresa": {
+			          "Target": {
+			            "Entity": "empresa.id_empresa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "empresa"
+			            },
+			            "Object": {
+			              "Role": "empresa.id_empresa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "empresas_have_id_empresas"
+			        }
+			      ]
+			    },
+			    "año_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Años"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "año": {
+			          "Target": {
+			            "Entity": "año"
+			          }
+			        },
+			        "año.año": {
+			          "Target": {
+			            "Entity": "año.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "año"
+			            },
+			            "Object": {
+			              "Role": "año.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_años"
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "SABI - Empresas competidores Españolas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SABI__empresas_competidores_española": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española"
+			          }
+			        },
+			        "año": {
+			          "Target": {
+			            "Entity": "año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SABI__empresas_competidores_española"
+			            },
+			            "Object": {
+			              "Role": "año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SABI__empresas_competidores_española_have_años"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "año"
+			            },
+			            "Object": {
+			              "Role": "SABI__empresas_competidores_española"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_SABI__empresas_competidores_española"
+			        }
+			      ]
+			    },
+			    "EUROSTAT__datos_macro_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "EUROSTAT - Datos Macro"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "EUROSTAT__datos_macro": {
+			          "Target": {
+			            "Entity": "EUROSTAT__datos_macro"
+			          }
+			        },
+			        "año": {
+			          "Target": {
+			            "Entity": "año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "EUROSTAT__datos_macro"
+			            },
+			            "Object": {
+			              "Role": "año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "EUROSTAT__datos_macros_have_años"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "año"
+			            },
+			            "Object": {
+			              "Role": "EUROSTAT__datos_macro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_EUROSTAT__datos_macros"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

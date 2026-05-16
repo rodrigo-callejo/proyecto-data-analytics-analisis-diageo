@@ -22,12 +22,13 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
 
-annotation PBI_QueryOrder = ["Años","Empresas","INE - Precios consumo","SABI - Empresas competidores Españolas","EUROSTAT - Datos Macro"]
+annotation PBI_QueryOrder = ["Años","Empresa","INE - Precios consumo","SABI - Empresas competidores Españolas","EUROSTAT - Datos Macro"]
 
 ref table Años
-ref table Empresas
+ref table Empresa
 ref table 'SABI - Empresas competidores Españolas'
 ref table 'EUROSTAT - Datos Macro'
+ref table 'Selector métrica SABI'
 
 ref cultureInfo es-ES
 

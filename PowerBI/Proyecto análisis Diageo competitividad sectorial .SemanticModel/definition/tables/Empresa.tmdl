@@ -1,4 +1,4 @@
-table Empresas
+table Empresa
 	lineageTag: e4d41aa4-9f46-4e41-b6aa-84c98f5aee5c
 
 	column id_empresa
@@ -9,11 +9,11 @@ table Empresas
 
 		annotation SummarizationSetBy = Automatic
 
-	column nombre
+	column Empresa
 		dataType: string
 		lineageTag: b5a587a1-a790-4580-9dd5-1e91eab8d9fa
 		summarizeBy: none
-		sourceColumn: nombre
+		sourceColumn: Empresa
 
 		annotation SummarizationSetBy = Automatic
 
@@ -41,7 +41,7 @@ table Empresas
 
 		annotation SummarizationSetBy = Automatic
 
-	partition Empresas = m
+	partition Empresa = m
 		mode: import
 		queryGroup: Maestras
 		source =
@@ -50,9 +50,10 @@ table Empresas
 				    Empresas_Sheet = Origen{[Item="Empresas",Kind="Sheet"]}[Data],
 				    #"Tipo cambiado" = Table.TransformColumnTypes(Empresas_Sheet,{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}}),
 				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Tipo cambiado", [PromoteAllScalars=true]),
-				    #"Tipo cambiado1" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"id_empresa", type text}, {"nombre", type text}, {"nif", type text}, {"ciudad", type text}, {"tipo", type text}})
+				    #"Tipo cambiado1" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"id_empresa", type text}, {"nombre", type text}, {"nif", type text}, {"ciudad", type text}, {"tipo", type text}}),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Tipo cambiado1",{{"nombre", "Empresa"}})
 				in
-				    #"Tipo cambiado1"
+				    #"Columnas con nombre cambiado"
 
 	annotation PBI_NavigationStepName = Navegación
 

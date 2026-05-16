@@ -1,0 +1,56 @@
+table 'Selector métrica SABI'
+	lineageTag: 90dba4c9-1119-48e9-a8de-8680256ea38b
+
+	column Métrica
+		lineageTag: 5efa30fc-c476-46f1-8edb-d2663cfd23ef
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Parámetro Orden'
+
+		relatedColumnDetails
+			groupByColumn: 'Parámetro Campos'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parámetro Campos'
+		isHidden
+		lineageTag: 542b09e8-9bf3-4746-b0e8-ddf0c1f55df3
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Parámetro Orden'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parámetro Orden'
+		isHidden
+		formatString: 0
+		lineageTag: 54b463c6-8c78-4116-9885-7cc40b453b61
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Selector métrica SABI' = calculated
+		mode: import
+		source =
+				{
+				    ("Nº Empleados", NAMEOF('SABI - Empresas competidores Españolas'[Nº Empleados]), 0),
+				    ("Liquidez", NAMEOF('SABI - Empresas competidores Españolas'[Liquidez]), 1),
+				    ("Ingresos", NAMEOF('SABI - Empresas competidores Españolas'[Ingresos]), 2),
+				    ("Resultado Neto", NAMEOF('SABI - Empresas competidores Españolas'[Resultado Neto]), 3),
+				    ("Resultados ant impuestos", NAMEOF('SABI - Empresas competidores Españolas'[Resultados ant impuestos]), 4),
+				    ("Fondos Propios", NAMEOF('SABI - Empresas competidores Españolas'[Fondos Propios]), 5),
+				    ("Activo Total", NAMEOF('SABI - Empresas competidores Españolas'[Activo Total]), 6),
+				    ("% ROI", NAMEOF('SABI - Empresas competidores Españolas'[% ROI]), 7),
+				    ("% ROE", NAMEOF('SABI - Empresas competidores Españolas'[% ROE]), 8),
+				    ("% Endeudamiento", NAMEOF('SABI - Empresas competidores Españolas'[% Endeudamiento]), 9)
+				}
+
+	annotation PBI_Id = 4c07153f3c284f75b77c3631a735120e
+
