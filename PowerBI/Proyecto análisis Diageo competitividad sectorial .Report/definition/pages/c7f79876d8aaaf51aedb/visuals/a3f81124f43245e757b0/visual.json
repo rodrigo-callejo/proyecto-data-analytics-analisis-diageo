@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "a3f81124f43245e757b0",
   "position": {
-    "x": 762.1426402557737,
+    "x": 697.09852598913881,
     "y": 0,
     "z": 5000,
-    "height": 68.313001232428959,
-    "width": 204.11595548966724,
+    "height": 68.518231186966631,
+    "width": 203.56865787432116,
     "tabOrder": 4000
   },
   "visual": {
@@ -27,9 +27,9 @@
                 }
               },
               "queryRef": "Parámetro.Parámetro",
-              "nativeQueryRef": "Métrica",
+              "nativeQueryRef": "Métrica Diageo",
               "active": true,
-              "displayName": "Métrica"
+              "displayName": "Métrica Diageo"
             }
           ]
         }
@@ -69,7 +69,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'''SABI - Empresas competidores Españolas''[Ingresos]'"
+                                "Value": "'''SABI - Empresas competidores Españolas''[Resultado Neto]'"
                               }
                             }
                           ]
@@ -97,7 +97,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "'''SABI - Empresas competidores Españolas''[Ingresos]'"
+                                      "Value": "'''SABI - Empresas competidores Españolas''[Resultado Neto]'"
                                     }
                                   }
                                 ]
@@ -121,7 +121,7 @@
                         },
                         "valueMap": [
                           {
-                            "0": "Ingresos"
+                            "0": "Resultado Neto"
                           }
                         ]
                       }
@@ -147,6 +147,13 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Métrica DIAGEO'"
                 }
               }
             }

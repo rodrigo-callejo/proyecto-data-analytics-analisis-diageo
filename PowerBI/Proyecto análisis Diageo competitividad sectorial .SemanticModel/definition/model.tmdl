@@ -29,6 +29,7 @@ ref table Empresa
 ref table 'SABI - Empresas competidores Españolas'
 ref table 'EUROSTAT - Datos Macro'
 ref table 'Selector métrica SABI'
+ref table 'Selector métrica EUROSTAT'
 
 ref cultureInfo es-ES
 

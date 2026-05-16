@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
-  "name": "aabca50647d0a14b28fd",
+  "name": "335b5e22f9f5fee6bd2c",
   "position": {
     "x": 79.441427463149722,
-    "y": 93.343677269200924,
-    "z": 3000,
-    "height": 306.8425135764158,
+    "y": 411.10938712179984,
+    "z": 7003,
+    "height": 301.87742435996893,
     "width": 808.31652443754842,
-    "tabOrder": 3000
+    "tabOrder": 5002
   },
   "visual": {
     "visualType": "lineChart",
@@ -32,26 +32,25 @@
             }
           ]
         },
-        "Y": {
+        "Series": {
           "projections": [
             {
               "field": {
-                "Measure": {
+                "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "SABI - Empresas competidores Españolas"
+                      "Entity": "EUROSTAT - Datos Macro"
                     }
                   },
-                  "Property": "Métrica seleccionada SABI"
+                  "Property": "País"
                 }
               },
-              "queryRef": "SABI - Empresas competidores Españolas.Métrica seleccionada SABI",
-              "nativeQueryRef": "Métrica DIAGEO",
-              "displayName": "Métrica DIAGEO"
+              "queryRef": "EUROSTAT - Datos Macro.País",
+              "nativeQueryRef": "País"
             }
           ]
         },
-        "Y2": {
+        "Y": {
           "projections": [
             {
               "field": {
@@ -65,8 +64,7 @@
                 }
               },
               "queryRef": "EUROSTAT - Datos Macro.Métrica seleccionada EUROSTAT",
-              "nativeQueryRef": "Métrica EUROSTAT",
-              "displayName": "Métrica EUROSTAT"
+              "nativeQueryRef": "Métrica seleccionada EUROSTAT"
             }
           ]
         }
@@ -78,10 +76,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "SABI - Empresas competidores Españolas"
+                    "Entity": "EUROSTAT - Datos Macro"
                   }
                 },
-                "Property": "Métrica seleccionada SABI"
+                "Property": "Métrica seleccionada EUROSTAT"
               }
             },
             "direction": "Descending"
@@ -90,47 +88,6 @@
         "isDefaultSort": true
       }
     },
-    "objects": {
-      "y2Axis": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "legend": [
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "8D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "valueAxis": [
-        {
-          "properties": {
-            "titleFontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
     "visualContainerObjects": {
       "title": [
         {
@@ -138,7 +95,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'YoY DIAGEO vs Tendencia EUROSTAT'"
+                  "Value": "'Métrica Eurostat YoY (avg)'"
                 }
               }
             }

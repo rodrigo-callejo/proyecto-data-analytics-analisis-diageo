@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
-  "name": "1e17de9b263653834b33",
+  "name": "7deef8175aa715ff759f",
   "position": {
-    "x": 462.74631497284713,
+    "x": 1126.0822342901474,
     "y": 0,
-    "z": 1000,
+    "z": 7004,
     "height": 67.525213343677265,
-    "width": 224.42203258339796,
-    "tabOrder": 1000
+    "width": 153.9177657098526,
+    "tabOrder": 5003
   },
   "visual": {
     "visualType": "slicer",
@@ -20,15 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Empresa"
+                      "Entity": "EUROSTAT - Datos Macro"
                     }
                   },
-                  "Property": "Empresa"
+                  "Property": "País"
                 }
               },
-              "queryRef": "Empresa.Empresa",
-              "nativeQueryRef": "Empresa",
-              "active": true
+              "queryRef": "EUROSTAT - Datos Macro.País",
+              "nativeQueryRef": "País EUROSTAT",
+              "active": true,
+              "displayName": "País EUROSTAT"
             }
           ]
         }
@@ -51,13 +52,20 @@
       "general": [
         {
           "properties": {
+            "selfFilterEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
             "filter": {
               "filter": {
                 "Version": 2,
                 "From": [
                   {
                     "Name": "e",
-                    "Entity": "Empresa",
+                    "Entity": "EUROSTAT - Datos Macro",
                     "Type": 0
                   }
                 ],
@@ -73,7 +81,7 @@
                                   "Source": "e"
                                 }
                               },
-                              "Property": "Empresa"
+                              "Property": "País"
                             }
                           }
                         ],
@@ -81,7 +89,35 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'DIAGEO ESPAÑA SA'"
+                                "Value": "'Germany'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Italy'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Portugal'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Spain'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'France'"
                               }
                             }
                           ]

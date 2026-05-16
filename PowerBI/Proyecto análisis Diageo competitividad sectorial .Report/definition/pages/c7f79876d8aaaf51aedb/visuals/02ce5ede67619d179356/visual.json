@@ -2,12 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "02ce5ede67619d179356",
   "position": {
-    "x": 46.943459870726549,
-    "y": 4.749524013720781,
+    "x": 39.768312285202214,
+    "y": 4.782694907066686,
     "z": 4000,
-    "height": 59.871379741869227,
-    "width": 222.95364825782892,
-    "tabOrder": 1000
+    "height": 60.289524201430318,
+    "width": 188.87594424141543
   },
   "visual": {
     "visualType": "slicer",
@@ -20,13 +19,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "SABI - Empresas competidores Españolas"
+                      "Entity": "Años"
                     }
                   },
                   "Property": "Año"
                 }
               },
-              "queryRef": "SABI - Empresas competidores Españolas.Año",
+              "queryRef": "Años.Año",
               "nativeQueryRef": "Año",
               "active": true
             }
@@ -38,6 +37,20 @@
       "data": [
         {
           "properties": {
+            "numericStart": {
+              "expr": {
+                "Literal": {
+                  "Value": "2017D"
+                }
+              }
+            },
+            "numericEnd": {
+              "expr": {
+                "Literal": {
+                  "Value": "2023D"
+                }
+              }
+            },
             "mode": {
               "expr": {
                 "Literal": {
@@ -102,6 +115,66 @@
                 "Literal": {
                   "Value": "0D"
                 }
+              }
+            },
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "a",
+                    "Entity": "Años",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "And": {
+                        "Left": {
+                          "Comparison": {
+                            "ComparisonKind": 2,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "a"
+                                  }
+                                },
+                                "Property": "Año"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "2017D"
+                              }
+                            }
+                          }
+                        },
+                        "Right": {
+                          "Comparison": {
+                            "ComparisonKind": 4,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "a"
+                                  }
+                                },
+                                "Property": "Año"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "2023D"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
               }
             }
           }

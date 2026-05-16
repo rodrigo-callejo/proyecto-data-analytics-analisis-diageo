@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
-  "name": "508507b085d24475fde8",
+  "name": "cd36a5b680cc48ddd280",
   "position": {
-    "x": 46.943459870726549,
-    "y": 4.749524013720781,
-    "z": 4000,
-    "height": 59.871379741869227,
-    "width": 222.95364825782892,
-    "tabOrder": 1000
+    "x": 914.56943366951123,
+    "y": 0,
+    "z": 7002,
+    "height": 68.518231186966631,
+    "width": 203.56865787432116,
+    "tabOrder": 5001
   },
   "visual": {
     "visualType": "slicer",
@@ -20,36 +20,114 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "SABI - Empresas competidores Españolas"
+                      "Entity": "Selector métrica EUROSTAT"
                     }
                   },
-                  "Property": "Año"
+                  "Property": "Métrica"
                 }
               },
-              "queryRef": "SABI - Empresas competidores Españolas.Año",
-              "nativeQueryRef": "Año",
-              "active": true
+              "queryRef": "Selector métrica EUROSTAT.Métrica",
+              "nativeQueryRef": "Métrica Eurostat",
+              "active": true,
+              "displayName": "Métrica Eurostat"
             }
           ]
         }
       }
     },
     "objects": {
-      "data": [
+      "general": [
         {
           "properties": {
-            "numericEnd": {
-              "expr": {
-                "Literal": {
-                  "Value": "2023D"
-                }
-              }
-            },
-            "mode": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Between'"
-                }
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "s",
+                    "Entity": "Selector métrica EUROSTAT",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "s"
+                                }
+                              },
+                              "Property": "Parámetro Campos"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'''EUROSTAT - Datos Macro''[Margen Bruto €]'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    },
+                    "Annotations": {
+                      "filterExpressionMetadata": {
+                        "expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Selector métrica EUROSTAT"
+                                }
+                              },
+                              "Property": "Métrica"
+                            }
+                          }
+                        ],
+                        "decomposedIdentities": {
+                          "values": [
+                            [
+                              {
+                                "0": [
+                                  {
+                                    "Literal": {
+                                      "Value": "'''EUROSTAT - Datos Macro''[Margen Bruto €]'"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          ],
+                          "columns": [
+                            {
+                              "value": {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "Selector métrica EUROSTAT"
+                                    }
+                                  },
+                                  "Property": "Parámetro Campos"
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "valueMap": [
+                          {
+                            "0": "Margen Bruto €"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
               }
             }
           }
@@ -61,14 +139,21 @@
             "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "11D"
+                  "Value": "8D"
                 }
               }
             },
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Métrica EUROSTAT'"
                 }
               }
             }
@@ -88,72 +173,23 @@
           }
         }
       ],
-      "numericInputStyle": [
+      "data": [
         {
           "properties": {
-            "textSize": {
+            "mode": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "'Dropdown'"
                 }
               }
             }
           }
         }
       ],
-      "general": [
+      "selection": [
         {
           "properties": {
-            "orientation": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
-                }
-              }
-            },
-            "filter": {
-              "filter": {
-                "Version": 2,
-                "From": [
-                  {
-                    "Name": "s",
-                    "Entity": "SABI - Empresas competidores Españolas",
-                    "Type": 0
-                  }
-                ],
-                "Where": [
-                  {
-                    "Condition": {
-                      "Comparison": {
-                        "ComparisonKind": 4,
-                        "Left": {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Source": "s"
-                              }
-                            },
-                            "Property": "Año"
-                          }
-                        },
-                        "Right": {
-                          "Literal": {
-                            "Value": "2023D"
-                          }
-                        }
-                      }
-                    }
-                  }
-                ]
-              }
-            }
-          }
-        }
-      ],
-      "slider": [
-        {
-          "properties": {
-            "show": {
+            "strictSingleSelect": {
               "expr": {
                 "Literal": {
                   "Value": "true"
@@ -171,7 +207,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -205,7 +241,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -236,7 +272,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -274,7 +310,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -325,41 +361,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "padding": [
-        {
-          "properties": {
-            "left": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
-                }
-              }
-            },
-            "top": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
-                }
-              }
-            },
-            "right": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
-                }
-              }
-            },
-            "bottom": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
+                  "Value": "true"
                 }
               }
             }
@@ -368,6 +370,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "parentGroupName": "1c2c82b70fdf93b66d5f"
+  }
 }

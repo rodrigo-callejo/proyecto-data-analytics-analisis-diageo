@@ -1,0 +1,51 @@
+table 'Selector métrica EUROSTAT'
+	lineageTag: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+
+	column Métrica
+		lineageTag: b2c3d4e5-f6a7-8901-bcde-f12345678901
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Parámetro Orden'
+
+		relatedColumnDetails
+			groupByColumn: 'Parámetro Campos'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parámetro Campos'
+		isHidden
+		lineageTag: c3d4e5f6-a7b8-9012-cdef-123456789012
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Parámetro Orden'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parámetro Orden'
+		isHidden
+		formatString: 0
+		lineageTag: d4e5f6a7-b8c9-0123-defa-234567890123
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Selector métrica EUROSTAT' = calculated
+		mode: import
+		source =
+				{
+				    ("Num Empresas", NAMEOF('EUROSTAT - Datos Macro'[Num Empresas]), 0),
+				    ("Facturación €", NAMEOF('EUROSTAT - Datos Macro'[Facturación €]), 1),
+				    ("Valor Producción €", NAMEOF('EUROSTAT - Datos Macro'[Valor Producción €]), 2),
+				    ("Margen Bruto €", NAMEOF('EUROSTAT - Datos Macro'[Margen Bruto €]), 3),
+				    ("Valor Añadido €", NAMEOF('EUROSTAT - Datos Macro'[Valor Añadido €]), 4)
+				}
+
+	annotation PBI_Id = 5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a
+

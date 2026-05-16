@@ -1,0 +1,90 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "995c4f973b432903be44",
+  "position": {
+    "x": 900.66718386346,
+    "y": 93.343677269200924,
+    "z": 7005,
+    "height": 619.64313421256782,
+    "width": 361.45849495733125,
+    "tabOrder": 5004
+  },
+  "visual": {
+    "visualType": "treemap",
+    "query": {
+      "queryState": {
+        "Group": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "EUROSTAT - Datos Macro"
+                    }
+                  },
+                  "Property": "País"
+                }
+              },
+              "queryRef": "EUROSTAT - Datos Macro.País",
+              "nativeQueryRef": "País",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "EUROSTAT - Datos Macro"
+                    }
+                  },
+                  "Property": "Métrica seleccionada EUROSTAT"
+                }
+              },
+              "queryRef": "EUROSTAT - Datos Macro.Métrica seleccionada EUROSTAT",
+              "nativeQueryRef": "Métrica seleccionada EUROSTAT"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "EUROSTAT - Datos Macro"
+                  }
+                },
+                "Property": "Métrica seleccionada EUROSTAT"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Métrica Eurostat por país'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

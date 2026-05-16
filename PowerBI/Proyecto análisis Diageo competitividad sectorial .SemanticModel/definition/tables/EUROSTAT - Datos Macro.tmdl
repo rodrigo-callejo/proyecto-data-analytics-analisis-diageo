@@ -1,6 +1,19 @@
 table 'EUROSTAT - Datos Macro'
 	lineageTag: 3fdaa40d-69d7-4869-8c0a-9d3760a59af4
 
+	measure 'Métrica seleccionada EUROSTAT' =
+			VAR _sel = SELECTEDVALUE('Selector métrica EUROSTAT'[Parámetro Orden])
+			RETURN
+			SWITCH(
+			    _sel,
+			    0, AVERAGE('EUROSTAT - Datos Macro'[Num Empresas]),
+			    1, AVERAGE('EUROSTAT - Datos Macro'[Facturación €]),
+			    2, AVERAGE('EUROSTAT - Datos Macro'[Valor Producción €]),
+			    3, AVERAGE('EUROSTAT - Datos Macro'[Margen Bruto €]),
+			    4, AVERAGE('EUROSTAT - Datos Macro'[Valor Añadido €])
+			)
+		lineageTag: e5f6a7b8-c9d0-1234-efab-345678901234
+
 	column 'Región Mercado'
 		dataType: string
 		lineageTag: 5ad3ee35-550e-4a5d-a6e6-a159ad900934

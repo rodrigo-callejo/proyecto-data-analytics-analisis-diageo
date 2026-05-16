@@ -836,6 +836,16 @@ cultureInfo es-ES
 			          "país": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "País EUROSTAT": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -963,7 +973,7 @@ cultureInfo es-ES
 			        }
 			      ]
 			    },
-			    "selector_métrica_SABI.parámetro": {
+			    "selector_métrica_SABI.métrica": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Selector métrica SABI",
@@ -973,12 +983,12 @@ cultureInfo es-ES
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "parámetro": {
+			          "métrica": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "Métrica": {
+			          "Métrica Diageo": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -1026,9 +1036,186 @@ cultureInfo es-ES
 			          }
 			        }
 			      ]
+			    },
+			    "SABI__empresas_competidores_española.métrica_seleccionada_SABI": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SABI - Empresas competidores Españolas",
+			          "ConceptualProperty": "Métrica seleccionada SABI"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "métrica seleccionada SABI": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Métrica DIAGEO": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "EUROSTAT__datos_macro.métrica_seleccionada_EUROSTAT": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EUROSTAT - Datos Macro",
+			          "ConceptualProperty": "Métrica seleccionada EUROSTAT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "métrica seleccionada EUROSTAT": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Métrica EUROSTAT": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "selector_métrica_EUROSTAT": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Selector métrica EUROSTAT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "selector métrica EUROSTAT": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "selector_métrica_EUROSTAT.métrica": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Selector métrica EUROSTAT",
+			          "ConceptualProperty": "Métrica"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "métrica": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Métrica Eurostat": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "selector_métrica_EUROSTAT.parámetro_campos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Selector métrica EUROSTAT",
+			          "ConceptualProperty": "Parámetro Campos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "parámetro campos": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "selector_métrica_EUROSTAT.parámetro_orden": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Selector métrica EUROSTAT",
+			          "ConceptualProperty": "Parámetro Orden"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "parámetro orden": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "SABI__empresas_competidores_española_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "SABI - Empresas competidores Españolas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SABI__empresas_competidores_española": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española"
+			          }
+			        },
+			        "año": {
+			          "Target": {
+			            "Entity": "año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SABI__empresas_competidores_española"
+			            },
+			            "Object": {
+			              "Role": "año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SABI__empresas_competidores_española_have_años"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "año"
+			            },
+			            "Object": {
+			              "Role": "SABI__empresas_competidores_española"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_SABI__empresas_competidores_española"
+			        }
+			      ]
+			    },
 			    "SABI__empresas_competidores_española_has_empresa": {
 			      "Binding": {
 			        "ConceptualEntity": "SABI - Empresas competidores Españolas"
@@ -1075,7 +1262,106 @@ cultureInfo es-ES
 			        }
 			      ]
 			    },
-			    "selector_métrica_SABI_has_parámetro": {
+			    "selector_métrica_EUROSTAT_has_métrica": {
+			      "Binding": {
+			        "ConceptualEntity": "Selector métrica EUROSTAT"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "selector_métrica_EUROSTAT": {
+			          "Target": {
+			            "Entity": "selector_métrica_EUROSTAT"
+			          }
+			        },
+			        "selector_métrica_EUROSTAT.métrica": {
+			          "Target": {
+			            "Entity": "selector_métrica_EUROSTAT.métrica"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "selector_métrica_EUROSTAT"
+			            },
+			            "Object": {
+			              "Role": "selector_métrica_EUROSTAT.métrica"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "selector_métrica_EUROSTAT_have_métricas"
+			        }
+			      ]
+			    },
+			    "selector_métrica_EUROSTAT_has_EUROSTAT__datos_macro_métrica_seleccionada_EUROSTAT": {
+			      "Binding": {
+			        "ConceptualEntity": "Selector métrica EUROSTAT"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "selector_métrica_EUROSTAT": {
+			          "Target": {
+			            "Entity": "selector_métrica_EUROSTAT"
+			          }
+			        },
+			        "EUROSTAT__datos_macro.métrica_seleccionada_EUROSTAT": {
+			          "Target": {
+			            "Entity": "EUROSTAT__datos_macro.métrica_seleccionada_EUROSTAT"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "selector_métrica_EUROSTAT"
+			            },
+			            "Object": {
+			              "Role": "EUROSTAT__datos_macro.métrica_seleccionada_EUROSTAT"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "selector_métrica_EUROSTAT_have_métrica_seleccionada_EUROSTAT"
+			        }
+			      ]
+			    },
+			    "EUROSTAT__datos_macro_has_métrica_seleccionada_EUROSTAT": {
+			      "Binding": {
+			        "ConceptualEntity": "EUROSTAT - Datos Macro"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "EUROSTAT__datos_macro": {
+			          "Target": {
+			            "Entity": "EUROSTAT__datos_macro"
+			          }
+			        },
+			        "EUROSTAT__datos_macro.métrica_seleccionada_EUROSTAT": {
+			          "Target": {
+			            "Entity": "EUROSTAT__datos_macro.métrica_seleccionada_EUROSTAT"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "EUROSTAT__datos_macro"
+			            },
+			            "Object": {
+			              "Role": "EUROSTAT__datos_macro.métrica_seleccionada_EUROSTAT"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "EUROSTAT__datos_macros_have_métrica_seleccionada_EUROSTAT"
+			        }
+			      ]
+			    },
+			    "selector_métrica_SABI_has_SABI__empresas_competidores_española_métrica_seleccionada_SABI": {
 			      "Binding": {
 			        "ConceptualEntity": "Selector métrica SABI"
 			      },
@@ -1086,9 +1372,9 @@ cultureInfo es-ES
 			            "Entity": "selector_métrica_SABI"
 			          }
 			        },
-			        "selector_métrica_SABI.parámetro": {
+			        "SABI__empresas_competidores_española.métrica_seleccionada_SABI": {
 			          "Target": {
-			            "Entity": "selector_métrica_SABI.parámetro"
+			            "Entity": "SABI__empresas_competidores_española.métrica_seleccionada_SABI"
 			          }
 			        }
 			      },
@@ -1099,12 +1385,78 @@ cultureInfo es-ES
 			              "Role": "selector_métrica_SABI"
 			            },
 			            "Object": {
-			              "Role": "selector_métrica_SABI.parámetro"
+			              "Role": "SABI__empresas_competidores_española.métrica_seleccionada_SABI"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "selector_métrica_SABIs_have_parámetros"
+			          "ID": "selector_métrica_SABIs_have_métrica_seleccionada_SABI"
+			        }
+			      ]
+			    },
+			    "SABI__empresas_competidores_española_has_métrica_seleccionada_SABI": {
+			      "Binding": {
+			        "ConceptualEntity": "SABI - Empresas competidores Españolas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SABI__empresas_competidores_española": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española"
+			          }
+			        },
+			        "SABI__empresas_competidores_española.métrica_seleccionada_SABI": {
+			          "Target": {
+			            "Entity": "SABI__empresas_competidores_española.métrica_seleccionada_SABI"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SABI__empresas_competidores_española"
+			            },
+			            "Object": {
+			              "Role": "SABI__empresas_competidores_española.métrica_seleccionada_SABI"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SABI__empresas_competidores_española_have_métrica_seleccionada_SABI"
+			        }
+			      ]
+			    },
+			    "selector_métrica_SABI_has_métrica": {
+			      "Binding": {
+			        "ConceptualEntity": "Selector métrica SABI"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "selector_métrica_SABI": {
+			          "Target": {
+			            "Entity": "selector_métrica_SABI"
+			          }
+			        },
+			        "selector_métrica_SABI.métrica": {
+			          "Target": {
+			            "Entity": "selector_métrica_SABI.métrica"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "selector_métrica_SABI"
+			            },
+			            "Object": {
+			              "Role": "selector_métrica_SABI.métrica"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "selector_métrica_SABIs_have_métricas"
 			        }
 			      ]
 			    },
@@ -2042,52 +2394,6 @@ cultureInfo es-ES
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "años_have_años"
-			        }
-			      ]
-			    },
-			    "SABI__empresas_competidores_española_has_año": {
-			      "Binding": {
-			        "ConceptualEntity": "SABI - Empresas competidores Españolas"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "SABI__empresas_competidores_española": {
-			          "Target": {
-			            "Entity": "SABI__empresas_competidores_española"
-			          }
-			        },
-			        "año": {
-			          "Target": {
-			            "Entity": "año"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "SABI__empresas_competidores_española"
-			            },
-			            "Object": {
-			              "Role": "año"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "SABI__empresas_competidores_española_have_años"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "año"
-			            },
-			            "Object": {
-			              "Role": "SABI__empresas_competidores_española"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "años_have_SABI__empresas_competidores_española"
 			        }
 			      ]
 			    },
