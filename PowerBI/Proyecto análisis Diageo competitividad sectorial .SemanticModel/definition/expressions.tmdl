@@ -1,0 +1,156 @@
+expression 'Eurostat - Número de empresas del sector (Enterprises - number)' =
+		let
+		    Origen = Excel.Workbook(File.Contents("C:\Users\rodri\Documents\Proyectos\Personal\proyecto-ade-gema\Datos\EUROSTAT.xlsx"), null, false),
+		    #"Sheet 1_sheet" = Origen{[Item="Sheet 1",Kind="Sheet"]}[Data],
+		    FilterNullAndWhitespace = each List.Select(_, each _ <> null and (not (_ is text) or Text.Trim(_) <> "")),
+		    #"Filas inferiores quitadas" = Table.RemoveLastN(#"Sheet 1_sheet", each try List.IsEmpty(List.Skip(FilterNullAndWhitespace(Record.FieldValues(_)), 2)) otherwise false),
+		    #"Filas superiores quitadas" = Table.Skip(#"Filas inferiores quitadas", each try List.IsEmpty(List.Skip(FilterNullAndWhitespace(Record.FieldValues(_)), 2)) otherwise false),
+		    #"Tipo cambiado" = Table.TransformColumnTypes(#"Filas superiores quitadas",{{"Column1", type text}, {"Column2", type any}, {"Column3", type text}, {"Column4", type any}, {"Column5", type text}, {"Column6", type any}, {"Column7", type text}, {"Column8", type any}, {"Column9", type text}, {"Column10", type any}, {"Column11", type text}, {"Column12", type any}, {"Column13", type text}, {"Column14", type any}, {"Column15", type text}, {"Column16", type any}, {"Column17", type text}, {"Column18", type any}, {"Column19", type text}, {"Column20", type any}, {"Column21", type text}})
+		in
+		    #"Tipo cambiado"
+	lineageTag: 5ecdc524-8c85-4e35-9e30-65f98f39e902
+	queryGroup: Eurostat
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+
+expression 'Eurostat - Facturación (Turnover M€)' =
+		let
+		    Origen = Excel.Workbook(File.Contents("C:\Users\rodri\Documents\Proyectos\Personal\proyecto-ade-gema\Datos\EUROSTAT.xlsx"), null, false),
+		    #"Sheet 2_sheet" = Origen{[Item="Sheet 2",Kind="Sheet"]}[Data],
+		    FilterNullAndWhitespace = each List.Select(_, each _ <> null and (not (_ is text) or Text.Trim(_) <> "")),
+		    #"Filas inferiores quitadas" = Table.RemoveLastN(#"Sheet 2_sheet", each try List.IsEmpty(List.Skip(FilterNullAndWhitespace(Record.FieldValues(_)), 2)) otherwise false),
+		    #"Filas superiores quitadas" = Table.Skip(#"Filas inferiores quitadas", each try List.IsEmpty(List.Skip(FilterNullAndWhitespace(Record.FieldValues(_)), 2)) otherwise false),
+		    #"Tipo cambiado" = Table.TransformColumnTypes(#"Filas superiores quitadas",{{"Column1", type text}, {"Column2", type any}, {"Column3", type text}, {"Column4", type any}, {"Column5", type text}, {"Column6", type any}, {"Column7", type text}, {"Column8", type any}, {"Column9", type text}, {"Column10", type any}, {"Column11", type text}, {"Column12", type any}, {"Column13", type text}, {"Column14", type any}, {"Column15", type text}, {"Column16", type any}, {"Column17", type text}, {"Column18", type any}, {"Column19", type text}, {"Column20", type any}, {"Column21", type text}})
+		in
+		    #"Tipo cambiado"
+	lineageTag: 8cc09546-1fb6-4766-b339-0fba10b1e181
+	queryGroup: Eurostat
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+
+expression 'Eurostat - Valor de producción (Production value - M€)' =
+		let
+		    Origen = Excel.Workbook(File.Contents("C:\Users\rodri\Documents\Proyectos\Personal\proyecto-ade-gema\Datos\EUROSTAT.xlsx"), null, false),
+		    #"Sheet 3_sheet" = Origen{[Item="Sheet 3",Kind="Sheet"]}[Data],
+		    FilterNullAndWhitespace = each List.Select(_, each _ <> null and (not (_ is text) or Text.Trim(_) <> "")),
+		    #"Filas inferiores quitadas" = Table.RemoveLastN(#"Sheet 3_sheet", each try List.IsEmpty(List.Skip(FilterNullAndWhitespace(Record.FieldValues(_)), 2)) otherwise false),
+		    #"Filas superiores quitadas" = Table.Skip(#"Filas inferiores quitadas", each try List.IsEmpty(List.Skip(FilterNullAndWhitespace(Record.FieldValues(_)), 2)) otherwise false),
+		    #"Tipo cambiado" = Table.TransformColumnTypes(#"Filas superiores quitadas",{{"Column1", type text}, {"Column2", type any}, {"Column3", type text}, {"Column4", type any}, {"Column5", type text}, {"Column6", type any}, {"Column7", type text}, {"Column8", type any}, {"Column9", type text}, {"Column10", type any}, {"Column11", type text}, {"Column12", type any}, {"Column13", type text}, {"Column14", type any}, {"Column15", type text}, {"Column16", type any}, {"Column17", type text}, {"Column18", type any}, {"Column19", type text}, {"Column20", type any}, {"Column21", type text}})
+		in
+		    #"Tipo cambiado"
+	lineageTag: d2a766c1-2f01-4800-9c8c-b70587495246
+	queryGroup: Eurostat
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+
+expression 'Eurostat - Margen bruto sobre mercancías (Gross margin on goods for resale M€)' =
+		let
+		    Origen = Excel.Workbook(File.Contents("C:\Users\rodri\Documents\Proyectos\Personal\proyecto-ade-gema\Datos\EUROSTAT.xlsx"), null, false),
+		    #"Sheet 4_sheet" = Origen{[Item="Sheet 4",Kind="Sheet"]}[Data],
+		    FilterNullAndWhitespace = each List.Select(_, each _ <> null and (not (_ is text) or Text.Trim(_) <> "")),
+		    #"Filas inferiores quitadas" = Table.RemoveLastN(#"Sheet 4_sheet", each try List.IsEmpty(List.Skip(FilterNullAndWhitespace(Record.FieldValues(_)), 2)) otherwise false),
+		    #"Filas superiores quitadas" = Table.Skip(#"Filas inferiores quitadas", each try List.IsEmpty(List.Skip(FilterNullAndWhitespace(Record.FieldValues(_)), 2)) otherwise false),
+		    #"Tipo cambiado" = Table.TransformColumnTypes(#"Filas superiores quitadas",{{"Column1", type text}, {"Column2", type any}, {"Column3", type text}, {"Column4", type any}, {"Column5", type text}, {"Column6", type any}, {"Column7", type text}, {"Column8", type any}, {"Column9", type text}, {"Column10", type any}, {"Column11", type text}, {"Column12", type any}, {"Column13", type text}, {"Column14", type any}, {"Column15", type text}, {"Column16", type any}, {"Column17", type text}, {"Column18", type any}, {"Column19", type text}, {"Column20", type any}, {"Column21", type text}})
+		in
+		    #"Tipo cambiado"
+	lineageTag: 75292f3c-93be-437b-a089-bff8fb1784a9
+	queryGroup: Eurostat
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+
+expression 'Eurostat - Valor añadido al coste factores (Value added factor cost M€)' =
+		let
+		    Origen = Excel.Workbook(File.Contents("C:\Users\rodri\Documents\Proyectos\Personal\proyecto-ade-gema\Datos\EUROSTAT.xlsx"), null, false),
+		    #"Sheet 5_sheet" = Origen{[Item="Sheet 5",Kind="Sheet"]}[Data],
+		    FilterNullAndWhitespace = each List.Select(_, each _ <> null and (not (_ is text) or Text.Trim(_) <> "")),
+		    #"Filas inferiores quitadas" = Table.RemoveLastN(#"Sheet 5_sheet", each try List.IsEmpty(List.Skip(FilterNullAndWhitespace(Record.FieldValues(_)), 2)) otherwise false),
+		    #"Filas superiores quitadas" = Table.Skip(#"Filas inferiores quitadas", each try List.IsEmpty(List.Skip(FilterNullAndWhitespace(Record.FieldValues(_)), 2)) otherwise false),
+		    #"Tipo cambiado" = Table.TransformColumnTypes(#"Filas superiores quitadas",{{"Column1", type text}, {"Column2", type any}, {"Column3", type text}, {"Column4", type any}, {"Column5", type text}, {"Column6", type any}, {"Column7", type text}, {"Column8", type any}, {"Column9", type text}, {"Column10", type any}, {"Column11", type text}, {"Column12", type any}, {"Column13", type text}, {"Column14", type any}, {"Column15", type text}, {"Column16", type any}, {"Column17", type text}, {"Column18", type any}, {"Column19", type text}, {"Column20", type any}, {"Column21", type text}})
+		in
+		    #"Tipo cambiado"
+	lineageTag: 4812c709-55c2-424d-8b36-0d20de3ecd7e
+	queryGroup: Eurostat
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+
+expression 'SABI - Diageo' =
+		let
+		    Origen = Excel.Workbook(File.Contents("C:\Users\rodri\Documents\Proyectos\Personal\proyecto-ade-gema\Datos\SABI BACARDI.xlsx"), null, true),
+		    #"Page 1_Sheet" = Origen{[Item="Page 1",Kind="Sheet"]}[Data],
+		    #"Encabezados promovidos" = Table.PromoteHeaders(#"Page 1_Sheet", [PromoteAllScalars=true]),
+		    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Column1", type text}, {"BACARDI ESPAÑA SA", type any}, {"Column3", type any}, {"Column4", type text}, {"Column5", type text}, {"Column6", type any}, {"Column7", type text}, {"Column8", type any}, {"Column9", type any}, {"Column10", type text}, {"Column11", type any}, {"Column12", type text}, {"Column13", type any}, {"Column14", type any}, {"Column15", type any}, {"Column16", type any}, {"Column17", type text}, {"Column18", type any}, {"Column19", type text}, {"Column20", type any}, {"Column21", type text}, {"Column22", type any}, {"Column23", type text}, {"Column24", type any}, {"Column25", type text}, {"Column26", type any}, {"Column27", type text}, {"Column28", type any}, {"Column29", type text}, {"Column30", type any}, {"Column31", type text}, {"Column32", type any}, {"Column33", type text}, {"Column34", type any}, {"Column35", type text}, {"Column36", type any}, {"Column37", type text}, {"Column38", type any}, {"Column39", type text}, {"Column40", type number}, {"Column41", type text}, {"Column42", type text}, {"Column43", type any}, {"Column44", type text}, {"Column45", type number}, {"Column46", type text}, {"Column47", type text}, {"Column48", type number}, {"Column49", type text}, {"Column50", type text}, {"Column51", type number}, {"Column52", type text}, {"Column53", type text}, {"Column54", type any}, {"Column55", type number}, {"Column56", type text}, {"Column57", type text}, {"Column58", type number}, {"Column59", type text}, {"Column60", type text}, {"Column61", type number}, {"Column62", type text}, {"Column63", type text}, {"Column64", type number}, {"Column65", type text}, {"Column66", type text}})
+		in
+		    #"Tipo cambiado"
+	lineageTag: 664e925d-9a72-4256-a0df-814e54bdb790
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+
+expression 'SABI - Bacardi' =
+		let
+		    Origen = Excel.Workbook(File.Contents("C:\Users\rodri\Documents\Proyectos\Personal\proyecto-ade-gema\Datos\SABI BACARDI.xlsx"), null, true),
+		    #"Page 1_Sheet" = Origen{[Item="Page 1",Kind="Sheet"]}[Data],
+		    #"Encabezados promovidos" = Table.PromoteHeaders(#"Page 1_Sheet", [PromoteAllScalars=true]),
+		    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Column1", type text}, {"BACARDI ESPAÑA SA", type any}, {"Column3", type any}, {"Column4", type text}, {"Column5", type text}, {"Column6", type any}, {"Column7", type text}, {"Column8", type any}, {"Column9", type any}, {"Column10", type text}, {"Column11", type any}, {"Column12", type text}, {"Column13", type any}, {"Column14", type any}, {"Column15", type any}, {"Column16", type any}, {"Column17", type text}, {"Column18", type any}, {"Column19", type text}, {"Column20", type any}, {"Column21", type text}, {"Column22", type any}, {"Column23", type text}, {"Column24", type any}, {"Column25", type text}, {"Column26", type any}, {"Column27", type text}, {"Column28", type any}, {"Column29", type text}, {"Column30", type any}, {"Column31", type text}, {"Column32", type any}, {"Column33", type text}, {"Column34", type any}, {"Column35", type text}, {"Column36", type any}, {"Column37", type text}, {"Column38", type any}, {"Column39", type text}, {"Column40", type number}, {"Column41", type text}, {"Column42", type text}, {"Column43", type any}, {"Column44", type text}, {"Column45", type number}, {"Column46", type text}, {"Column47", type text}, {"Column48", type number}, {"Column49", type text}, {"Column50", type text}, {"Column51", type number}, {"Column52", type text}, {"Column53", type text}, {"Column54", type any}, {"Column55", type number}, {"Column56", type text}, {"Column57", type text}, {"Column58", type number}, {"Column59", type text}, {"Column60", type text}, {"Column61", type number}, {"Column62", type text}, {"Column63", type text}, {"Column64", type number}, {"Column65", type text}, {"Column66", type text}})
+		in
+		    #"Tipo cambiado"
+	lineageTag: 7c7f96d1-2371-4ce9-8786-8363f875729b
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+
+expression 'SABI - Beam Suntory' =
+		let
+		    Origen = Excel.Workbook(File.Contents("C:\Users\rodri\Documents\Proyectos\Personal\proyecto-ade-gema\Datos\SABI BACARDI.xlsx"), null, true),
+		    #"Page 1_Sheet" = Origen{[Item="Page 1",Kind="Sheet"]}[Data],
+		    #"Encabezados promovidos" = Table.PromoteHeaders(#"Page 1_Sheet", [PromoteAllScalars=true]),
+		    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Column1", type text}, {"BACARDI ESPAÑA SA", type any}, {"Column3", type any}, {"Column4", type text}, {"Column5", type text}, {"Column6", type any}, {"Column7", type text}, {"Column8", type any}, {"Column9", type any}, {"Column10", type text}, {"Column11", type any}, {"Column12", type text}, {"Column13", type any}, {"Column14", type any}, {"Column15", type any}, {"Column16", type any}, {"Column17", type text}, {"Column18", type any}, {"Column19", type text}, {"Column20", type any}, {"Column21", type text}, {"Column22", type any}, {"Column23", type text}, {"Column24", type any}, {"Column25", type text}, {"Column26", type any}, {"Column27", type text}, {"Column28", type any}, {"Column29", type text}, {"Column30", type any}, {"Column31", type text}, {"Column32", type any}, {"Column33", type text}, {"Column34", type any}, {"Column35", type text}, {"Column36", type any}, {"Column37", type text}, {"Column38", type any}, {"Column39", type text}, {"Column40", type number}, {"Column41", type text}, {"Column42", type text}, {"Column43", type any}, {"Column44", type text}, {"Column45", type number}, {"Column46", type text}, {"Column47", type text}, {"Column48", type number}, {"Column49", type text}, {"Column50", type text}, {"Column51", type number}, {"Column52", type text}, {"Column53", type text}, {"Column54", type any}, {"Column55", type number}, {"Column56", type text}, {"Column57", type text}, {"Column58", type number}, {"Column59", type text}, {"Column60", type text}, {"Column61", type number}, {"Column62", type text}, {"Column63", type text}, {"Column64", type number}, {"Column65", type text}, {"Column66", type text}})
+		in
+		    #"Tipo cambiado"
+	lineageTag: ce443cc9-09a6-4433-aa7d-c9608037905c
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+
+expression 'SABI - Pernord Ricard' =
+		let
+		    Origen = Excel.Workbook(File.Contents("C:\Users\rodri\Documents\Proyectos\Personal\proyecto-ade-gema\Datos\SABI BACARDI.xlsx"), null, true),
+		    #"Page 1_Sheet" = Origen{[Item="Page 1",Kind="Sheet"]}[Data],
+		    #"Encabezados promovidos" = Table.PromoteHeaders(#"Page 1_Sheet", [PromoteAllScalars=true]),
+		    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Column1", type text}, {"BACARDI ESPAÑA SA", type any}, {"Column3", type any}, {"Column4", type text}, {"Column5", type text}, {"Column6", type any}, {"Column7", type text}, {"Column8", type any}, {"Column9", type any}, {"Column10", type text}, {"Column11", type any}, {"Column12", type text}, {"Column13", type any}, {"Column14", type any}, {"Column15", type any}, {"Column16", type any}, {"Column17", type text}, {"Column18", type any}, {"Column19", type text}, {"Column20", type any}, {"Column21", type text}, {"Column22", type any}, {"Column23", type text}, {"Column24", type any}, {"Column25", type text}, {"Column26", type any}, {"Column27", type text}, {"Column28", type any}, {"Column29", type text}, {"Column30", type any}, {"Column31", type text}, {"Column32", type any}, {"Column33", type text}, {"Column34", type any}, {"Column35", type text}, {"Column36", type any}, {"Column37", type text}, {"Column38", type any}, {"Column39", type text}, {"Column40", type number}, {"Column41", type text}, {"Column42", type text}, {"Column43", type any}, {"Column44", type text}, {"Column45", type number}, {"Column46", type text}, {"Column47", type text}, {"Column48", type number}, {"Column49", type text}, {"Column50", type text}, {"Column51", type number}, {"Column52", type text}, {"Column53", type text}, {"Column54", type any}, {"Column55", type number}, {"Column56", type text}, {"Column57", type text}, {"Column58", type number}, {"Column59", type text}, {"Column60", type text}, {"Column61", type number}, {"Column62", type text}, {"Column63", type text}, {"Column64", type number}, {"Column65", type text}, {"Column66", type text}})
+		in
+		    #"Tipo cambiado"
+	lineageTag: 7ed5fb10-39f3-479d-a28a-d45c2f6035cf
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+
+expression 'INE - Precios consumo' =
+		let
+		    Origen = Excel.Workbook(File.Contents("C:\Users\rodri\Documents\Proyectos\Personal\proyecto-ade-gema\Datos\INE tabla 76104 bebidas espirituosas vino cerveza.xlsx"), null, true),
+		    #"tabla-76104_Sheet" = Origen{[Item="tabla-76104",Kind="Sheet"]}[Data],
+		    #"Encabezados promovidos" = Table.PromoteHeaders(#"tabla-76104_Sheet", [PromoteAllScalars=true]),
+		    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Índices de Precios de Consumo Armonizado. Base 2025", type text}, {"Column2", type text}, {"Column3", type any}, {"Column4", type any}, {"Column5", type any}, {"Column6", type any}, {"Column7", type any}, {"Column8", type any}, {"Column9", type any}, {"Column10", type any}, {"Column11", type any}, {"Column12", type any}, {"Column13", type any}, {"Column14", type any}, {"Column15", type any}, {"Column16", type any}, {"Column17", type any}, {"Column18", type any}, {"Column19", type any}, {"Column20", type any}, {"Column21", type any}, {"Column22", type any}, {"Column23", type any}, {"Column24", type any}, {"Column25", type any}, {"Column26", type any}, {"Column27", type any}, {"Column28", type any}, {"Column29", type any}, {"Column30", type any}, {"Column31", type any}, {"Column32", type any}, {"Column33", type any}, {"Column34", type any}, {"Column35", type any}, {"Column36", type any}, {"Column37", type any}, {"Column38", type any}, {"Column39", type any}, {"Column40", type any}, {"Column41", type any}, {"Column42", type any}, {"Column43", type any}, {"Column44", type any}, {"Column45", type any}, {"Column46", type any}, {"Column47", type any}, {"Column48", type any}, {"Column49", type any}, {"Column50", type any}, {"Column51", type any}, {"Column52", type any}, {"Column53", type any}, {"Column54", type any}, {"Column55", type any}, {"Column56", type any}, {"Column57", type any}, {"Column58", type any}, {"Column59", type any}, {"Column60", type any}, {"Column61", type any}, {"Column62", type any}, {"Column63", type any}, {"Column64", type any}, {"Column65", type any}, {"Column66", type any}, {"Column67", type any}, {"Column68", type any}, {"Column69", type any}, {"Column70", type any}, {"Column71", type any}, {"Column72", type any}, {"Column73", type any}, {"Column74", type any}, {"Column75", type any}, {"Column76", type any}, {"Column77", type any}, {"Column78", type any}, {"Column79", type any}, {"Column80", type any}, {"Column81", type any}, {"Column82", type any}, {"Column83", type any}, {"Column84", type any}, {"Column85", type any}, {"Column86", type any}, {"Column87", type any}, {"Column88", type any}, {"Column89", type any}, {"Column90", type any}, {"Column91", type any}, {"Column92", type text}, {"Column93", type any}, {"Column94", type any}, {"Column95", type any}, {"Column96", type any}, {"Column97", type any}, {"Column98", type any}, {"Column99", type any}, {"Column100", type any}, {"Column101", type any}, {"Column102", type any}, {"Column103", type any}, {"Column104", type any}, {"Column105", type any}, {"Column106", type any}, {"Column107", type any}, {"Column108", type any}, {"Column109", type any}, {"Column110", type any}, {"Column111", type any}, {"Column112", type any}, {"Column113", type any}, {"Column114", type any}, {"Column115", type any}, {"Column116", type any}, {"Column117", type any}, {"Column118", type any}, {"Column119", type any}, {"Column120", type any}, {"Column121", type any}, {"Column122", type any}, {"Column123", type any}, {"Column124", type any}, {"Column125", type any}, {"Column126", type any}, {"Column127", type any}, {"Column128", type any}, {"Column129", type any}, {"Column130", type any}, {"Column131", type any}, {"Column132", type any}, {"Column133", type any}, {"Column134", type any}, {"Column135", type any}, {"Column136", type any}, {"Column137", type any}, {"Column138", type any}, {"Column139", type any}, {"Column140", type any}, {"Column141", type any}, {"Column142", type any}, {"Column143", type any}, {"Column144", type any}, {"Column145", type any}, {"Column146", type any}, {"Column147", type any}, {"Column148", type any}, {"Column149", type any}, {"Column150", type any}, {"Column151", type any}, {"Column152", type any}, {"Column153", type any}, {"Column154", type any}, {"Column155", type any}, {"Column156", type any}, {"Column157", type any}, {"Column158", type any}, {"Column159", type any}, {"Column160", type any}, {"Column161", type any}, {"Column162", type any}, {"Column163", type any}, {"Column164", type any}, {"Column165", type any}, {"Column166", type any}, {"Column167", type any}, {"Column168", type any}, {"Column169", type any}, {"Column170", type any}, {"Column171", type any}, {"Column172", type any}, {"Column173", type any}, {"Column174", type any}, {"Column175", type any}, {"Column176", type any}, {"Column177", type any}, {"Column178", type any}, {"Column179", type any}, {"Column180", type any}, {"Column181", type any}, {"Column182", type text}, {"Column183", type any}, {"Column184", type any}, {"Column185", type any}, {"Column186", type any}, {"Column187", type any}, {"Column188", type any}, {"Column189", type any}, {"Column190", type any}, {"Column191", type any}, {"Column192", type any}, {"Column193", type any}, {"Column194", type any}, {"Column195", type any}, {"Column196", type any}, {"Column197", type any}, {"Column198", type any}, {"Column199", type any}, {"Column200", type any}, {"Column201", type any}, {"Column202", type any}, {"Column203", type any}, {"Column204", type any}, {"Column205", type any}, {"Column206", type any}, {"Column207", type any}, {"Column208", type any}, {"Column209", type any}, {"Column210", type any}, {"Column211", type any}, {"Column212", type any}, {"Column213", type any}, {"Column214", type any}, {"Column215", type any}, {"Column216", type any}, {"Column217", type any}, {"Column218", type any}, {"Column219", type any}, {"Column220", type any}, {"Column221", type any}, {"Column222", type any}, {"Column223", type any}, {"Column224", type any}, {"Column225", type any}, {"Column226", type any}, {"Column227", type any}, {"Column228", type any}, {"Column229", type any}, {"Column230", type any}, {"Column231", type any}, {"Column232", type any}, {"Column233", type any}, {"Column234", type any}, {"Column235", type any}, {"Column236", type any}, {"Column237", type any}, {"Column238", type any}, {"Column239", type any}, {"Column240", type any}, {"Column241", type any}, {"Column242", type any}, {"Column243", type any}, {"Column244", type any}, {"Column245", type any}, {"Column246", type any}, {"Column247", type any}, {"Column248", type any}, {"Column249", type any}, {"Column250", type any}, {"Column251", type any}, {"Column252", type any}, {"Column253", type any}, {"Column254", type any}, {"Column255", type any}, {"Column256", type any}, {"Column257", type any}, {"Column258", type any}, {"Column259", type any}, {"Column260", type any}, {"Column261", type any}, {"Column262", type any}, {"Column263", type any}, {"Column264", type any}, {"Column265", type any}, {"Column266", type any}, {"Column267", type any}, {"Column268", type any}, {"Column269", type any}, {"Column270", type any}, {"Column271", type any}})
+		in
+		    #"Tipo cambiado"
+	lineageTag: d5eabc29-402a-4e22-8601-a643aeca667f
+	queryGroup: INE
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

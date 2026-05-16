@@ -1,0 +1,60 @@
+table Empresas
+	lineageTag: e4d41aa4-9f46-4e41-b6aa-84c98f5aee5c
+
+	column id_empresa
+		dataType: string
+		lineageTag: d3e07bb5-046f-4c65-b6f2-a1847eefb8ca
+		summarizeBy: none
+		sourceColumn: id_empresa
+
+		annotation SummarizationSetBy = Automatic
+
+	column nombre
+		dataType: string
+		lineageTag: b5a587a1-a790-4580-9dd5-1e91eab8d9fa
+		summarizeBy: none
+		sourceColumn: nombre
+
+		annotation SummarizationSetBy = Automatic
+
+	column nif
+		dataType: string
+		lineageTag: 90660141-8d78-46ba-b3ab-29d32cf67bb0
+		summarizeBy: none
+		sourceColumn: nif
+
+		annotation SummarizationSetBy = Automatic
+
+	column ciudad
+		dataType: string
+		lineageTag: 1d4246f7-8040-4915-ab09-0d9c6a5a967b
+		summarizeBy: none
+		sourceColumn: ciudad
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo
+		dataType: string
+		lineageTag: 4cb48278-a4ec-4a9a-a78e-6d24964e76a3
+		summarizeBy: none
+		sourceColumn: tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Empresas = m
+		mode: import
+		queryGroup: Maestras
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\rodri\Documents\Proyectos\Personal\proyecto-ade-gema\Datos\Tablas Maestras.xlsx"), null, true),
+				    Empresas_Sheet = Origen{[Item="Empresas",Kind="Sheet"]}[Data],
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Empresas_Sheet,{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}}),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Tipo cambiado", [PromoteAllScalars=true]),
+				    #"Tipo cambiado1" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"id_empresa", type text}, {"nombre", type text}, {"nif", type text}, {"ciudad", type text}, {"tipo", type text}})
+				in
+				    #"Tipo cambiado1"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

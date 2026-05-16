@@ -6,9 +6,26 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
+queryGroup Eurostat
+
+	annotation PBI_QueryGroupOrder = 0
+
+queryGroup Maestras
+
+	annotation PBI_QueryGroupOrder = 1
+
+queryGroup INE
+
+	annotation PBI_QueryGroupOrder = 2
+
 annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
+
+annotation PBI_QueryOrder = ["Eurostat - Número de empresas del sector (Enterprises - number)","Eurostat - Facturación (Turnover M€)","Eurostat - Valor de producción (Production value - M€)","Eurostat - Margen bruto sobre mercancías (Gross margin on goods for resale M€)","Eurostat - Valor añadido al coste factores (Value added factor cost M€)","Años","Empresas","SABI - Diageo","SABI - Bacardi","SABI - Beam Suntory","SABI - Pernord Ricard","INE - Precios consumo"]
+
+ref table Años
+ref table Empresas
 
 ref cultureInfo es-ES
 

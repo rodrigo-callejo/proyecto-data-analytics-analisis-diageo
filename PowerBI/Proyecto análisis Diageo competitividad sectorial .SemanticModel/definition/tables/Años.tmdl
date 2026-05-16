@@ -1,0 +1,28 @@
+table Años
+	lineageTag: c657f77b-b1a9-49c9-9fbf-3af15b4b91bb
+
+	column Año
+		dataType: int64
+		formatString: 0
+		lineageTag: d170ece1-c2af-4653-89dd-f9310bc97eee
+		summarizeBy: sum
+		sourceColumn: Año
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Años = m
+		mode: import
+		queryGroup: Maestras
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\rodri\Documents\Proyectos\Personal\proyecto-ade-gema\Datos\Tablas Maestras.xlsx"), null, true),
+				    Años_Sheet = Origen{[Item="Años",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Años_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Año", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+
