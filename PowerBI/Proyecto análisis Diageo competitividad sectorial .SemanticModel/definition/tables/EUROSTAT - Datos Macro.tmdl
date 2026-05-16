@@ -18,52 +18,58 @@ table 'EUROSTAT - Datos Macro'
 		annotation SummarizationSetBy = Automatic
 
 	column Año
-		dataType: string
+		dataType: int64
+		formatString: 0
 		lineageTag: 3d641b75-81d7-4cd2-8814-1ea0178150ed
 		summarizeBy: none
 		sourceColumn: Año
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column 'Num Empresas'
-		dataType: string
+		dataType: int64
+		formatString: #,##0
 		lineageTag: d011b321-cf4f-4b28-8532-b382b78961a6
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Num Empresas
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column 'Facturación €'
-		dataType: string
+		dataType: double
+		formatString: #,##0
 		lineageTag: 5196406d-4656-474e-9901-63784798aa47
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Facturación €
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column 'Valor Producción €'
-		dataType: string
+		dataType: double
+		formatString: #,##0
 		lineageTag: 2622457b-8198-4c3d-8cbd-6e20d776d342
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Valor Producción €
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column 'Margen Bruto €'
-		dataType: string
+		dataType: double
+		formatString: #,##0
 		lineageTag: 3fedd7c1-5909-4080-bd03-a4f34618155c
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Margen Bruto €
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column 'Valor Añadido €'
-		dataType: string
+		dataType: double
+		formatString: #,##0
 		lineageTag: c8ae99e2-26db-4165-9ebc-49aa048846fc
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Valor Añadido €
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	partition 'EUROSTAT - Datos Macro' = m
 		mode: import
@@ -71,9 +77,19 @@ table 'EUROSTAT - Datos Macro'
 				let
 				    Origen = Excel.Workbook(File.Contents("C:\Users\rodri\Documents\Proyectos\Personal\proyecto-ade-gema\Datos-Tratados\EUROSTAT.xlsx"), null, true),
 				    #"Datos finales_Sheet" = Origen{[Item="Datos finales",Kind="Sheet"]}[Data],
-				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Datos finales_Sheet", [PromoteAllScalars=true])
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Datos finales_Sheet", [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos", {
+				        {"Región Mercado", type text},
+				        {"País", type text},
+				        {"Año", Int64.Type},
+				        {"Num Empresas", Int64.Type},
+				        {"Facturación €", type number},
+				        {"Valor Producción €", type number},
+				        {"Margen Bruto €", type number},
+				        {"Valor Añadido €", type number}
+				    })
 				in
-				    #"Encabezados promovidos"
+				    #"Tipo cambiado"
 
 	annotation PBI_NavigationStepName = Navegación
 

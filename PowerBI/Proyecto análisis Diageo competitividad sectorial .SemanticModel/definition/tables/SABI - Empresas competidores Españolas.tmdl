@@ -2,12 +2,13 @@ table 'SABI - Empresas competidores Españolas'
 	lineageTag: 84c2aeff-1773-4881-ac83-73d7555573e8
 
 	column Año
-		dataType: string
+		dataType: int64
+		formatString: 0
 		lineageTag: 79b3b920-5e10-4a08-aab1-c3b11a0c488d
 		summarizeBy: none
 		sourceColumn: Año
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column 'ID Empresa'
 		dataType: string
@@ -58,84 +59,94 @@ table 'SABI - Empresas competidores Españolas'
 		annotation SummarizationSetBy = Automatic
 
 	column Ingresos
-		dataType: string
+		dataType: int64
+		formatString: #,##0
 		lineageTag: 003ee89c-7741-4f64-b90d-b97d39b83d91
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Ingresos
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column 'Resultados ant impuestos'
-		dataType: string
+		dataType: int64
+		formatString: #,##0
 		lineageTag: 88121cfa-dbc3-4897-979c-db5e3b20a8d2
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Resultados ant impuestos
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column 'Resultado Neto'
-		dataType: string
+		dataType: int64
+		formatString: #,##0
 		lineageTag: 8ff1d45e-267f-4989-8daa-248cada12b5b
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Resultado Neto
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column 'Activo Total'
-		dataType: string
+		dataType: int64
+		formatString: #,##0
 		lineageTag: 2c6cbce7-8d70-458f-bd13-76f494102de2
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Activo Total
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column 'Fondos Propios'
-		dataType: string
+		dataType: int64
+		formatString: #,##0
 		lineageTag: abfb3b1c-4720-47ce-9040-56c2fe3d51ae
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Fondos Propios
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column 'ROI pct'
-		dataType: string
+		dataType: double
+		formatString: 0.00
 		lineageTag: 81f282cf-70ea-4114-956b-fda8735f6275
-		summarizeBy: none
+		summarizeBy: average
 		sourceColumn: ROI pct
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column 'ROE pct'
-		dataType: string
+		dataType: double
+		formatString: 0.00
 		lineageTag: 2f39d445-0ff8-4ad4-bef0-d304a4de0f1a
-		summarizeBy: none
+		summarizeBy: average
 		sourceColumn: ROE pct
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column Liquidez
-		dataType: string
+		dataType: double
+		formatString: 0.00
 		lineageTag: 154fbec0-a3d3-45aa-8464-48d3679f7488
-		summarizeBy: none
+		summarizeBy: average
 		sourceColumn: Liquidez
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column 'Endeudamiento Porcentual'
-		dataType: string
+		dataType: double
+		formatString: 0.00
 		lineageTag: 0584a6f7-dc65-438e-8302-be8e23d27056
-		summarizeBy: none
+		summarizeBy: average
 		sourceColumn: Endeudamiento Porcentual
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column Empleados
-		dataType: string
+		dataType: int64
+		formatString: #,##0
 		lineageTag: 99a25e7c-1e5c-47d8-b8b0-6f5c2d5abc9c
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Empleados
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	partition 'SABI - Empresas competidores Españolas' = m
 		mode: import
@@ -143,9 +154,28 @@ table 'SABI - Empresas competidores Españolas'
 				let
 				    Origen = Excel.Workbook(File.Contents("C:\Users\rodri\Documents\Proyectos\Personal\proyecto-ade-gema\Datos-Tratados\SABI.xlsx"), null, true),
 				    #"Datos finales_Sheet" = Origen{[Item="Datos finales",Kind="Sheet"]}[Data],
-				    #"Encabezados promovidos1" = Table.PromoteHeaders(#"Datos finales_Sheet", [PromoteAllScalars=true])
+				    #"Encabezados promovidos1" = Table.PromoteHeaders(#"Datos finales_Sheet", [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos1", {
+				        {"ID Empresa", type text},
+				        {"Nombre", type text},
+				        {"Ciudad", type text},
+				        {"Tipo", type text},
+				        {"Año", Int64.Type},
+				        {"Cierre Fiscal", type text},
+				        {"Fecha Cierre", type text},
+				        {"Ingresos", Int64.Type},
+				        {"Resultados ant impuestos", Int64.Type},
+				        {"Resultado Neto", Int64.Type},
+				        {"Activo Total", Int64.Type},
+				        {"Fondos Propios", Int64.Type},
+				        {"ROI pct", type number},
+				        {"ROE pct", type number},
+				        {"Liquidez", type number},
+				        {"Endeudamiento Porcentual", type number},
+				        {"Empleados", Int64.Type}
+				    })
 				in
-				    #"Encabezados promovidos1"
+				    #"Tipo cambiado"
 
 	annotation PBI_ResultType = Table
 
