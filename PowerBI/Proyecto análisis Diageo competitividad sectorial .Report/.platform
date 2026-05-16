@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Proyecto análisis Diageo competitividad sectorial "
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "51818ad8-d57d-4f95-899b-776ed120bd8b"
+  }
+}
