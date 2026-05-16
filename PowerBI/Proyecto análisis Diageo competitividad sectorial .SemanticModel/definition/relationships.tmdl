@@ -1,0 +1,12 @@
+relationship AutoDetected_e50faace-ae47-4049-ba70-e7484ece54f7
+	fromColumn: 'SABI - Empresas competidores Españolas'.'ID Empresa'
+	toColumn: Empresas.id_empresa
+
+relationship 29117453-811d-d92d-8533-43c6a9ce5a22
+	fromColumn: 'SABI - Empresas competidores Españolas'.Año
+	toColumn: Años.Año
+
+relationship cfab6e12-167b-0dd7-8c71-2bfbfde32e46
+	fromColumn: 'EUROSTAT - Datos Macro'.Año
+	toColumn: Años.Año
+

@@ -82,6 +82,11 @@ Granularidad: **1 fila = 1 indicador × 1 año** (solo España)
 
 ## Plan de acción
 
+### Decisión de arquitectura
+La manipulación de datos se hace en **dos fases**:
+1. **Pre-procesado en Excel** — consolidación, eliminación de filas/columnas inservibles, normalización de estructura. Así Power BI recibe ficheros ya limpios.
+2. **Power Query** — solo pasos finales: tipado, columnas calculadas derivadas (margen_neto_pct, ingresos_por_empleado), columna origen_fichero, y unión de tablas SABI.
+
 ### Paso 1 — Extracción en Power Query (qué coger de cada fichero)
 
 **SABIs (×4):**

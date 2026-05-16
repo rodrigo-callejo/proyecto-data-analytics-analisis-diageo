@@ -22,10 +22,12 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
 
-annotation PBI_QueryOrder = ["Eurostat - Número de empresas del sector (Enterprises - number)","Eurostat - Facturación (Turnover M€)","Eurostat - Valor de producción (Production value - M€)","Eurostat - Margen bruto sobre mercancías (Gross margin on goods for resale M€)","Eurostat - Valor añadido al coste factores (Value added factor cost M€)","Años","Empresas","SABI - Diageo","SABI - Bacardi","SABI - Beam Suntory","SABI - Pernord Ricard","INE - Precios consumo"]
+annotation PBI_QueryOrder = ["Años","Empresas","INE - Precios consumo","SABI - Empresas competidores Españolas","EUROSTAT - Datos Macro"]
 
 ref table Años
 ref table Empresas
+ref table 'SABI - Empresas competidores Españolas'
+ref table 'EUROSTAT - Datos Macro'
 
 ref cultureInfo es-ES
 
